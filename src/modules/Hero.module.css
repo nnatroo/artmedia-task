@@ -2,18 +2,30 @@
     margin-top: 56px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .hero-content {
     width: 106.25rem;
-    height: 48.75rem;
-    background-image: linear-gradient(205.96deg, rgba(67, 26, 26, 0) -7.14%, #431A1A 121.86%), url(../assets/heroImage.png);
+    height: 770px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-image: linear-gradient(205.96deg, rgba(67, 26, 26, 0) -7.14%, #431A1A 121.86%);
 }
 
-.hero-content::after {
+.hero-image {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.hero-background {
+    position: absolute;
+    bottom: -10px;
+}
+
+/* .hero-content::after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -21,7 +33,7 @@
     transform: translateX(-50%);
     width: 1680px;
     border-bottom: 10px solid #2B3252;
-}
+} */
 
 .hero-content {
     display: flex;

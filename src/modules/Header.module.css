@@ -15,6 +15,7 @@
     display: flex;
     gap: 26px;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar-brand h3 {

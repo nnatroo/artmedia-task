@@ -2,11 +2,17 @@ import React from "react";
 import classes from "../modules/Hero.module.css";
 import Arrow from "../assets/arrow.svg";
 import { Fade } from "react-awesome-reveal";
+import HeroBackground from '../assets/heroBackground.svg'
+import HeroImage from '../assets/heroImage.png';
 
 const Hero = () => {
   return (
     <Fade>
       <div className={classes["hero-section"]}>
+
+        <img className={classes["hero-background"]} src={HeroBackground} alt="" />
+        <img className={classes["hero-image"]} src={HeroImage} alt="" />
+
         <div className={classes["hero-content"]}>
           <div className={classes["hero-logical-container"]}>
             <div className={classes["hero-text-wrapper"]}>

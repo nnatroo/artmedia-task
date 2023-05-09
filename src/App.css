@@ -13,10 +13,10 @@ body {
   overflow-x: hidden;
 }
 
-/* ::selection {
-  background-color: var(--primary400);
-  color: white;
-} */
+::selection {
+  background-color: #ef5555;
+  color: #fff;;
+}
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;

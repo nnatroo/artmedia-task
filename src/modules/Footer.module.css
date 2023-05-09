@@ -22,6 +22,7 @@
     display: flex;
     max-width: 7.5rem;
     gap: 1.625rem;
+    cursor: pointer;
 }
 
 .footer-brand h1 {
@@ -55,11 +56,26 @@
     font-weight: 700;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.footer-links li:hover {
+    color: #a7a7a7;
 }
 
 .footer-links-socials {
     display: flex;
     gap: 1.125rem;
+    cursor: pointer;
+}
+
+.footer-links-socials img {
+    transition: 0.2s;
+}
+
+.footer-links-socials img:hover {
+    filter: drop-shadow(1px 1px 10px #a5a5a5);
 }
 
 .footer-contact {
@@ -90,6 +106,8 @@
     position: relative;
 }
 
+
+
 .contact-bottom-row textarea {
     resize: none;
     width: 100%;
@@ -114,6 +132,12 @@
     border: none;
     padding: .75rem 1.125rem;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-bottom-row button:hover {
+    background: #f74949;
+    box-shadow: 1px 1px 10px #ffffff8a;
 }
 
 input:focus {

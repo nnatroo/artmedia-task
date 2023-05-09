@@ -56,16 +56,18 @@
     display: flex;
     align-items: center;
     gap: .75rem;
-    transition: 0.1s;
+    transition: 0.2s;
     margin-top: 27px;
 }
 
 .about-content button:hover {
-    background: rgba(255, 255, 255, 0.222);
+    background-color: #EF5555;
+    color: white;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.315);
 }
 
 .about-content button:hover img {
     transition: 0.2s;
     transform: translateX(6px);
+    filter: brightness(100);
 }
