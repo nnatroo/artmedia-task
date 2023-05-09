@@ -2,6 +2,7 @@ import React from "react";
 import classes from '../modules/Header.module.css'
 import CompanyLogo from '../assets/companyLogo.svg'
 import SearchIcon from '../assets/searchIcon.svg'
+import BurgerMenu from '../assets/menuBurger.svg'
 
 const Header = () => {
   return (
@@ -26,6 +27,10 @@ const Header = () => {
           <div className={classes["navbar-search-wrapper"]}>
             <input type="text" placeholder="Search keyword ..." />
             <img src={SearchIcon} alt="" />
+          </div>
+
+          <div className={classes["navbar-burger-menu-wrapper"]}>
+            <img src={BurgerMenu} alt="" />
           </div>
         </div>
       </section>

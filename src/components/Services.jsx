@@ -3,11 +3,11 @@ import classes from "../modules/Services.module.css";
 import FirstServiceLogo from "../assets/firstServiceLogo.svg";
 import SecondServiceLogo from "../assets/secondServiceLogo.svg";
 import ThirdServiceLogo from "../assets/thirdServiceLogo.svg";
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 const Services = () => {
   return (
-    <Fade>
+    <Slide>
       <div className={classes["services-wrapper"]}>
         <h1>Services</h1>
 
@@ -28,7 +28,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </Fade>
+    </Slide>
   );
 };
 
