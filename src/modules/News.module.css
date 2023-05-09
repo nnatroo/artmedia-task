@@ -12,6 +12,8 @@
 }
 
 .top-bar {
+    padding-top: 5.875rem;
+    padding-bottom: 5.375rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

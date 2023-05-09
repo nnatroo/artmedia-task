@@ -9,8 +9,8 @@
 }
 
 body {
-  height: 4000px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* ::selection {
@@ -30,3 +30,5 @@ body {
   border-radius: 10px;
   background-color: #ef5555;
 }
+
+

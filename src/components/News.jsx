@@ -4,6 +4,7 @@ import LeftArrow from "../assets/leftArrow.svg";
 import RightArrow from "../assets/rightArrow.svg";
 import NewsSwiper from "./NewsSwiper";
 
+
 const News = () => {
   return (
     <section className={classes["news-wrapper"]}>
@@ -11,8 +12,8 @@ const News = () => {
         <div className={classes["top-bar"]}>
           <h1>News</h1>
           <div className={classes["arrows-wrapper"]}>
-            <img src={LeftArrow} alt="left-arrow" />
-            <img src={RightArrow} alt="right-arrow" />
+            <img className={classes["swiper-button-prev"]} src={LeftArrow} alt="left-arrow" />
+            <img className={classes["swiper-button-next"]} src={RightArrow} alt="right-arrow" />
           </div>
         </div>
 
