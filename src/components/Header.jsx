@@ -10,13 +10,13 @@ const Header = () => {
 
   const burgerClickHandler = () => {
     setShowBurgerMenu(!showBurgerMenu);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const cancelHandler = () => {
     setShowBurgerMenu(false);
-    document.body.style.overflow = 'visible';
-  }
+    document.body.style.overflow = "visible";
+  };
 
   return (
     <>
@@ -31,11 +31,21 @@ const Header = () => {
           </div>
 
           <nav className={classes["navbar-links"]}>
-            <a href="#home"><li>Home</li></a>
-            <a href="#services"><li>Services</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#about"><li>About</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <a href="#home">
+              <li>Home</li>
+            </a>
+            <a href="#services">
+              <li>Services</li>
+            </a>
+            <a href="#projects">
+              <li>Projects</li>
+            </a>
+            <a href="#about">
+              <li>About</li>
+            </a>
+            <a href="#contact">
+              <li>Contact</li>
+            </a>
           </nav>
 
           <div className={classes["navbar-search-wrapper"]}>

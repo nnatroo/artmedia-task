@@ -11,9 +11,7 @@ const About = () => {
       <div id="about" className={classes["logical-container"]}>
         <section className={classes["about-section"]}>
           <div className={classes["image-wrapper"]}>
-            <div
-              className={classes["about-image-border"]}
-            />
+            <div className={classes["about-image-border"]} />
             <img className={classes["about-image"]} src={AboutImage} alt="" />
           </div>
 

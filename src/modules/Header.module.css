@@ -104,8 +104,8 @@
     .navbar-links {
         gap: 1.625rem;
     }
-    
-    .navbar-brand img{
+
+    .navbar-brand img {
         display: none;
     }
 
@@ -180,8 +180,8 @@
     .navbar-brand h3 {
         font-size: 1.3rem;
     }
-    
 
-    
+
+
 
 }

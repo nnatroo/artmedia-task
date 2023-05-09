@@ -127,7 +127,7 @@ const News = () => {
                 src={RightArrow}
                 alt="left-arrow"
               />
-              
+
               <img
                 className={`swipper-next-button ${classes["swiper-button-next"]}`}
                 src={RightArrow}

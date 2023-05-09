@@ -17,7 +17,7 @@ const Hero = () => {
         <img className={classes["hero-image"]} src={HeroImage} alt="" />
 
         <div className={classes["hero-content"]}>
-          <div className={classes['text-wrapper']}>
+          <div className={classes["text-wrapper"]}>
             <h1>Company’s First Service Title</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

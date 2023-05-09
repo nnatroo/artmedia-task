@@ -131,9 +131,7 @@
     transform: translateX(6px);
 }
 
-@media (max-width: 1800px) {
-
-}
+@media (max-width: 1800px) {}
 
 
 @media (max-width: 1600px) {
