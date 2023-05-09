@@ -66,12 +66,12 @@
     margin-top: 27px;
 }
 
-.hero-text-wrapper button:hover {
+.text-wrapper button:hover {
     background: rgba(255, 255, 255, 0.222);
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.153);
 }
 
-.hero-text-wrapper button:hover img {
+.text-wrapper button:hover img {
     transition: 0.2s;
     transform: translateX(6px);
 }

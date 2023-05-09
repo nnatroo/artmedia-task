@@ -17,8 +17,9 @@ import Image4 from "../assets/image4.png";
 import CardBackground from "../assets/cardBackground.png";
 
 const News = () => {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  const swiperRef = useRef(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+  const swiperRef = useRef();
+
   const breakpoints = {
     300: {
       spaceBetween: 400,
@@ -58,21 +59,22 @@ const News = () => {
       spaceBetween: 100,
     },
     1630: {
-      spaceBetween: 100,
+      spaceBetween: -100,
     },
     1730: {
-      spaceBetween: 100,
+      spaceBetween: -100,
     },
     1830: {
-      spaceBetween: 100,
+      spaceBetween: -300,
     },
     1910: {
-      spaceBetween: 100,
+      spaceBetween: -300,
     },
   };
 
-  const handleSlideChange = (swiper) => {
-    setActiveSlideIndex(swiper.activeIndex);
+  const slideChangeHandler = (swiper) => {
+    setActiveSlide(swiper.activeIndex);
+    console.log(swiper.activeIndex);
   };
 
   const swiperCardData = [
@@ -106,6 +108,11 @@ const News = () => {
       date: "20 April 2023",
       imageUrl: Image2,
     },
+    {
+      heading: "I must explain to you how all this mistaken idea",
+      date: "19 April 2023",
+      imageUrl: Image3,
+    },
   ];
 
   return (
@@ -116,16 +123,15 @@ const News = () => {
             <h1>News</h1>
             <div className={classes["arrows-wrapper"]}>
               <img
-                className={`${classes["swiper-button-prev"]}`}
+                className={`swipper-prev-button ${classes["swiper-button-prev"]}`}
                 src={RightArrow}
                 alt="left-arrow"
-                onClick={() => swiper.slideNext()}
               />
+              
               <img
-                className={classes["swiper-button-next"]}
+                className={`swipper-next-button ${classes["swiper-button-next"]}`}
                 src={RightArrow}
                 alt="right-arrow"
-                onClick={() => swiper.slideNext()}
               />
             </div>
           </div>
@@ -138,19 +144,21 @@ const News = () => {
               spaceBetween={-110}
               slidesPerView={3}
               breakpoints={breakpoints}
-              // navigation={true}
-              onSlideChange={handleSlideChange}
+              navigation={{
+                prevEl: ".swipper-prev-button",
+                nextEl: ".swipper-next-button",
+              }}
+              onSlideChange={slideChangeHandler}
               rewind={true}
             >
               {swiperCardData.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className={classes["swiper-card"]}>
                     <div className={classes["image-container"]}>
-                      <img
+                      {/* <div
                         className={classes["swiper-card-back"]}
-                        src={CardBackground}
                         alt=""
-                      />
+                      /> */}
                       <img
                         className={classes["swiper-card-img"]}
                         src={item.imageUrl}
