@@ -16,9 +16,9 @@
 
 .menu-wrapper img {
     align-self: flex-end;
-    padding-right: 60px;
-    transform: scale(1.5);
+    transform: scale(1.6);
     cursor: pointer;
+    margin-right: 60px;
 }
 
 .no-scroll {
@@ -64,4 +64,9 @@
 .navbar-search-wrapper img {
     position: absolute;
     transform: translate(-30px, 18px);
+}
+
+.close-btn:hover {
+    transition: all 0.2s;
+    transform: scale(2);
 }

@@ -117,7 +117,7 @@ const News = () => {
 
   return (
     <Fade>
-      <div className={classes["news-wrapper"]}>
+      <div id="projects" className={classes["news-wrapper"]}>
         <div className={classes["logical-container"]}>
           <div className={classes["top-bar"]}>
             <h1>News</h1>
@@ -153,12 +153,8 @@ const News = () => {
             >
               {swiperCardData.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className={classes["swiper-card"]}>
+                  <div className={`${classes["swiper-card"]}`}>
                     <div className={classes["image-container"]}>
-                      {/* <div
-                        className={classes["swiper-card-back"]}
-                        alt=""
-                      /> */}
                       <img
                         className={classes["swiper-card-img"]}
                         src={item.imageUrl}

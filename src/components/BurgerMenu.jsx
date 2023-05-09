@@ -9,7 +9,7 @@ const BurgerMenu = (props) => {
     <>
       <div className={`${classes["menu-wrapper"]} animate__animated animate__slideInDown`}>
 
-        <img onClick={props.onCancel} src={XSymbol} alt="" />
+        <img className={classes['close-btn']} onClick={props.onCancel} src={XSymbol} alt="" />
 
         <div className={classes["menu-container"]}>
 

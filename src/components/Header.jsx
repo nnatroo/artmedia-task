@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <>
       {showBurgerMenu && <BurgerMenu onCancel={cancelHandler} />}
-      <section className={classes["header"]}>
+      <section id="home" className={classes["header"]}>
         <div className={classes["navbar-wrapper"]}>
           <div className={classes["navbar-brand"]}>
             <img src={CompanyLogo} alt="CompanyLogo" />
@@ -31,11 +31,11 @@ const Header = () => {
           </div>
 
           <nav className={classes["navbar-links"]}>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
+            <a href="#home"><li>Home</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#contact"><li>Contact</li></a>
           </nav>
 
           <div className={classes["navbar-search-wrapper"]}>

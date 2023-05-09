@@ -8,7 +8,7 @@ import { Slide } from "react-awesome-reveal";
 const Services = () => {
   return (
     <Slide>
-      <div className={classes["services-wrapper"]}>
+      <div id="services" className={classes["services-wrapper"]}>
         <h1>Services</h1>
 
         <div className={classes["services-items"]}>

@@ -19,10 +19,18 @@ const Footer = () => {
 
           <div className={classes["footer-links-wrapper"]}>
             <div className={classes["footer-links"]}>
-              <li>Services</li>
-              <li>Projects</li>
-              <li>About</li>
-              <li>Contact</li>
+              <a href="#services">
+                <li>Services</li>
+              </a>
+              <a href="#projects">
+                <li>Projects</li>
+              </a>
+              <a href="#about">
+                <li>About</li>
+              </a>
+              <a href="#contact">
+                <li>Contact</li>
+              </a>
             </div>
             <div className={classes["footer-links-socials"]}>
               <img src={InstagramLogo} alt="" />
@@ -30,13 +38,19 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={classes["footer-contact"]}>
+          <div id="contact" className={classes["footer-contact"]}>
             <div className={classes["contact-top-row"]}>
               <input type="text" placeholder="Name" name="" id="" />
               <input type="email" placeholder="Email" name="" id="" />
             </div>
             <div className={classes["contact-bottom-row"]}>
-              <textarea placeholder="Text"  id="text-area" name="" rows="7" cols="50"></textarea>
+              <textarea
+                placeholder="Text"
+                id="text-area"
+                name=""
+                rows="7"
+                cols="50"
+              ></textarea>
               <button>Send</button>
             </div>
           </div>
