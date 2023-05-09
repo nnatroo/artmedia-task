@@ -115,3 +115,11 @@
     padding: .75rem 1.125rem;
     cursor: pointer;
 }
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}

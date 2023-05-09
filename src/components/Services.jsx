@@ -3,10 +3,11 @@ import classes from "../modules/Services.module.css";
 import FirstServiceLogo from "../assets/firstServiceLogo.svg";
 import SecondServiceLogo from "../assets/secondServiceLogo.svg";
 import ThirdServiceLogo from "../assets/thirdServiceLogo.svg";
+import { ScrollReveal } from "reveal-on-scroll-react";
 
 const Services = () => {
   return (
-    <section className={classes["services-wrapper"]}>
+    <ScrollReveal.div className={classes["services-wrapper"]}>
         
       <h1>Services</h1>
 
@@ -26,7 +27,7 @@ const Services = () => {
           <h3>Service Name</h3>
         </div>
       </div>
-    </section>
+    </ScrollReveal.div>
   );
 };
 
