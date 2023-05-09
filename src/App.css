@@ -10,6 +10,7 @@
 
 body {
   height: 4000px;
+  scroll-behavior: smooth;
 }
 
 /* ::selection {
