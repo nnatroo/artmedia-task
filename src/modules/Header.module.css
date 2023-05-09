@@ -79,7 +79,10 @@
 
 .navbar-burger-menu-wrapper {
     display: none;
+    cursor: pointer;
 }
+
+
 
 @media (max-width: 1600px) {
     .navbar-wrapper {
