@@ -45,11 +45,23 @@
     opacity: 0.5;
 }
 
+.swiper {
+    width: 110%;
+    box-sizing: content-box;
+    overflow: hidden !important;
+}
+
 .swiper-wrapper {
     overflow: visible !important;
+    width: 100%;
     clip-path: inset(-100vw -100vw -100vw 0);
     padding-bottom: 9.375rem;
     position: relative;
+    box-sizing: border-box;
+}
+
+.swiper-card {
+    width: 300px;
 }
 
 .swiper-card-back {
@@ -128,6 +140,10 @@
     transform: translateX(6px);
 }
 
+@media (max-width: 1800px) {
+
+}
+
 
 @media (max-width: 1600px) {
     .logical-container {
@@ -163,4 +179,8 @@
 
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 460px) {
+    .swiper-wrapper {
+        clip-path: none;
+    }
+}

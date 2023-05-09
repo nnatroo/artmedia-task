@@ -205,26 +205,47 @@ textarea:focus {
         flex-direction: column;
         align-items: center;
         gap: 1.875rem;
-        width: 60%;
+        width: 300px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-top-row input {
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    .contact-bottom-row {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 1.875rem;
+        width: 300px;
+    }
+
+    .contact-bottom-row textarea {
+        width: 300px;
     }
 
     .contact-top-row input:last-child {
         margin-left: 0;
     }
 
-    .footer-contact {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .contact-top-row input {
-        width: 100%;
-    }
-
-    .contact-top-row input:last-child {
-        margin-left: 0px;
-    }
 
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 420px) {
+    .footer-contact {
+        width: 0;
+    }
+    .contact-top-row {
+        width: 100%;
+    }
+
+
+    
+
+}

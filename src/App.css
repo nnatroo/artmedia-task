@@ -10,7 +10,6 @@
 
 body {
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 
 ::selection {

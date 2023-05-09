@@ -21,28 +21,35 @@ const News = () => {
   const swiperRef = useRef(null);
   const breakpoints = {
     300: {
-      spaceBetween: 100,
+      spaceBetween: 400,
+      slidesPerView: 1,
     },
     768: {
-      spaceBetween: -240,
+      spaceBetween: 400,
+      slidesPerView: 2,
     },
     868: {
-      spaceBetween: -400,
+      spaceBetween: 400,
+      slidesPerView: 2,
     },
     968: {
-      spaceBetween: -500,
+      spaceBetween: 400,
+      slidesPerView: 2,
     },
     1068: {
-      spaceBetween: -600,
+      spaceBetween: 400,
+      slidesPerView: 2,
     },
     1168: {
-      spaceBetween: -700,
+      spaceBetween: 400,
+      slidesPerView: 2,
     },
     1268: {
-      spaceBetween: -800,
+      spaceBetween: 400,
+      slidesPerView: 3,
     },
     1368: {
-      spaceBetween: -880,
+      spaceBetween: 300,
     },
     1440: {
       spaceBetween: 300,
@@ -123,18 +130,15 @@ const News = () => {
             </div>
           </div>
 
-          <div className={classes[""]}>
+          <div className={classes["swiper"]}>
             <Swiper
-            className={classes['swiper-wrapper']}
+              className={classes["swiper-wrapper"]}
               ref={swiperRef}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              // spaceBetween={100}
+              spaceBetween={-110}
               slidesPerView={3}
               breakpoints={breakpoints}
-              navigation={{
-                prevEl: ".prev-button",
-                nextEl: ".next-button",
-              }}
+              // navigation={true}
               onSlideChange={handleSlideChange}
               rewind={true}
             >
