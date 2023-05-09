@@ -1,0 +1,51 @@
+.services-wrapper {
+    margin-top: 5.875rem;
+    width: 1420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services-wrapper h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.services-items {
+    display: flex;
+    gap: 21.25rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.375rem;
+    align-items: center;
+}
+
+.col img{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.col img:hover{
+    transform: scale(1.1);
+}
+
+.col img:hover + h3{
+    transition: 0.2s;
+    color: #ef5555;
+    transform: scale(1.1);
+}
+
+.col h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000000;
+}

@@ -11,3 +11,21 @@
 body {
   height: 4000px;
 }
+
+/* ::selection {
+  background-color: var(--primary400);
+  color: white;
+} */
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ef5555;
+}

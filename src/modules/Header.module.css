@@ -1,7 +1,6 @@
 .header {
     margin-top: 56px;
     display: flex;
-    padding-inline: 250px;
     justify-content: center;
 }
 
@@ -36,10 +35,28 @@
 .navbar-links li {
     cursor: pointer;
     transition: 0.1s;
+    position: relative;
 }
 
 .navbar-links li:hover {
     color: #EF5555;
+}
+
+.navbar-links li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #EF5555; 
+    margin-left: calc(50% - 12.5px); 
+    transition: transform 0.2s ease-in-out;
+    transform: scaleX(0);
+}
+
+.navbar-links li:hover::after {
+    transform: scaleX(1);
 }
 
 .navbar-search-wrapper input {
