@@ -39,11 +39,11 @@ const News = () => {
     },
     1068: {
       spaceBetween: 400,
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1168: {
       spaceBetween: 400,
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1268: {
       spaceBetween: 400,
@@ -59,7 +59,7 @@ const News = () => {
       spaceBetween: 100,
     },
     1630: {
-      spaceBetween: -100,
+      spaceBetween: 0,
     },
     1730: {
       spaceBetween: -100,
