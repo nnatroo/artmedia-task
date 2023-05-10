@@ -137,6 +137,12 @@
     }
 }
 
+@media (min-width: 1900px) {
+    .logical-container {
+        width: 1460px;
+    }
+}
+
 @media (max-width: 1800px) {
     .logical-container {
         width: 1200px;
@@ -163,13 +169,13 @@
 
 @media (max-width: 1400px) {
     .logical-container {
-        width: 1150px;
+        width: 1100px;
     }
 }
 
 @media (max-width: 1300px) {
     .logical-container {
-        width: 1050px;
+        width: 1000px;
     }
 }
 
