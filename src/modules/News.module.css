@@ -214,4 +214,8 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    .swiper-wrapper {
+        clip-path: inset(0 0 0 0);
+    }
 }

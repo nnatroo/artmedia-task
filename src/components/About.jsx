@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "../modules/About.module.css";
 import AboutImage from "../assets/aboutImage.png";
-import AboutImageBorder from "../assets/aboutImageBorder.png";
 import Arrow from "../assets/orangeArrow.svg";
 import { Slide } from "react-awesome-reveal";
 

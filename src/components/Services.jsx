@@ -4,6 +4,7 @@ import FirstServiceLogo from "../assets/firstServiceLogo.svg";
 import SecondServiceLogo from "../assets/secondServiceLogo.svg";
 import ThirdServiceLogo from "../assets/thirdServiceLogo.svg";
 import { Slide } from "react-awesome-reveal";
+import Tilt from "react-parallax-tilt";
 
 const Services = () => {
   return (
@@ -13,17 +14,23 @@ const Services = () => {
 
         <div className={classes["services-items"]}>
           <div className={classes["col"]}>
-            <img src={FirstServiceLogo} alt="" />
+            <Tilt>
+              <img src={FirstServiceLogo} alt="" />
+            </Tilt>
             <h3 className={classes["title"]}>Service Name</h3>
           </div>
 
           <div className={classes["col"]}>
-            <img src={SecondServiceLogo} alt="" />
+            <Tilt>
+              <img src={SecondServiceLogo} alt="" />
+            </Tilt>
             <h3>Service Name</h3>
           </div>
 
           <div className={classes["col"]}>
-            <img src={ThirdServiceLogo} alt="" />
+            <Tilt>
+              <img src={ThirdServiceLogo} alt="" />
+            </Tilt>
             <h3>Service Name</h3>
           </div>
         </div>
