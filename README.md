@@ -16,7 +16,6 @@ To Start Server:
 To Visit Web:
 
 ### Local : `http://localhost:5173/`  
-### `artmedia-task.vercel.app`  
 
 ## Project Screenshot
 
