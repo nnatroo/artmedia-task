@@ -17,6 +17,6 @@ To Visit Web:
 
 `http://localhost:5173/`  
 
-## Project Screen Shot
+## Project Screenshot
 
 ![image](https://github.com/nnatroo/artmedia-task/assets/88983923/c406d10b-5f15-46e0-a379-6ac22544b2c1)
