@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
 import classes from "../modules/News.module.css";
-import LeftArrow from "../assets/leftArrow.svg";
 import RightArrow from "../assets/rightArrow.svg";
 import { Fade } from "react-awesome-reveal";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -14,13 +12,46 @@ import Image1 from "../assets/image1.png";
 import Image2 from "../assets/image2.png";
 import Image3 from "../assets/image3.png";
 import Image4 from "../assets/image4.png";
-import CardBackground from "../assets/cardBackground.png";
-
 const News = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const swiperRef = useRef();
+  const swiperCardData = [
+    {
+      heading: "There are many variations of passages",
+      date: "22 April 2023",
+      imageUrl: Image1,
+    },
+    {
+      heading: "The point of using Lorem Ipsum",
+      date: "20 April 2023",
+      imageUrl: Image2,
+    },
+    {
+      heading: "I must explain to you how all this mistaken idea",
+      date: "19 April 2023",
+      imageUrl: Image3,
+    },
+    {
+      heading: "On the other hand, we denounce with righteous indignation",
+      date: "15 April 2023",
+      imageUrl: Image4,
+    },
+    {
+      heading: "There are many variations of passages",
+      date: "22 April 2023",
+      imageUrl: Image1,
+    },
+    {
+      heading: "The point of using Lorem Ipsum",
+      date: "20 April 2023",
+      imageUrl: Image2,
+    },
+    {
+      heading: "I must explain to you how all this mistaken idea",
+      date: "19 April 2023",
+      imageUrl: Image3,
+    },
+  ];
 
-  const breakpoints = {
+  const swiperBreakpoints = {
     300: {
       spaceBetween: 400,
       slidesPerView: 1,
@@ -72,49 +103,6 @@ const News = () => {
     },
   };
 
-  const slideChangeHandler = (swiper) => {
-    setActiveSlide(swiper.activeIndex);
-    console.log(swiper.activeIndex);
-  };
-
-  const swiperCardData = [
-    {
-      heading: "There are many variations of passages",
-      date: "22 April 2023",
-      imageUrl: Image1,
-    },
-    {
-      heading: "The point of using Lorem Ipsum",
-      date: "20 April 2023",
-      imageUrl: Image2,
-    },
-    {
-      heading: "I must explain to you how all this mistaken idea",
-      date: "19 April 2023",
-      imageUrl: Image3,
-    },
-    {
-      heading: "On the other hand, we denounce with righteous indignation",
-      date: "15 April 2023",
-      imageUrl: Image4,
-    },
-    {
-      heading: "There are many variations of passages",
-      date: "22 April 2023",
-      imageUrl: Image1,
-    },
-    {
-      heading: "The point of using Lorem Ipsum",
-      date: "20 April 2023",
-      imageUrl: Image2,
-    },
-    {
-      heading: "I must explain to you how all this mistaken idea",
-      date: "19 April 2023",
-      imageUrl: Image3,
-    },
-  ];
-
   return (
     <Fade>
       <div id="projects" className={classes["news-wrapper"]}>
@@ -139,17 +127,15 @@ const News = () => {
           <div className={classes["swiper"]}>
             <Swiper
               className={classes["swiper-wrapper"]}
-              ref={swiperRef}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
+              rewind={true}
               spaceBetween={-110}
               slidesPerView={3}
-              breakpoints={breakpoints}
+              breakpoints={swiperBreakpoints}
               navigation={{
                 prevEl: ".swipper-prev-button",
                 nextEl: ".swipper-next-button",
               }}
-              onSlideChange={slideChangeHandler}
-              rewind={true}
             >
               {swiperCardData.map((item, index) => (
                 <SwiperSlide key={index}>
