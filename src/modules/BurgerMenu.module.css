@@ -70,3 +70,10 @@
     transition: all 0.2s;
     transform: scale(2);
 }
+
+@media (max-width: 460px) {
+    .navbar-search-wrapper input {
+        width: 210px;
+    }
+    
+}
