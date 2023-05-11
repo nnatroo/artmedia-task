@@ -19,4 +19,4 @@ To Visit Web:
 
 ## Project Screenshot
 
-![image](https://github.com/nnatroo/artmedia-task/assets/88983923/c406d10b-5f15-46e0-a379-6ac22544b2c1)
+![image](https://github.com/nnatroo/artmedia-task/assets/88983923/1aba3d94-fd4a-4e4e-9c46-825cd7f2a2fd)
