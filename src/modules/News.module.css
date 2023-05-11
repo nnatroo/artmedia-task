@@ -139,8 +139,14 @@
 
 @media (min-width: 1900px) {
     .logical-container {
-        width: 1460px;
+        width: 1420px;
     }
+
+    .swiper {
+        width: 117%;
+        box-sizing: border-box;
+    }
+
 }
 
 @media (max-width: 1800px) {
