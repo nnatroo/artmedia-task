@@ -52,21 +52,21 @@ const News = () => {
   ];
 
   const swiperBreakpoints = {
-    300: {
+    320: {
       spaceBetween: 400,
       slidesPerView: 1,
     },
     768: {
-      spaceBetween: 400,
+      spaceBetween: 300,
       slidesPerView: 2,
     },
     868: {
-      spaceBetween: 400,
+      spaceBetween: 300,
       slidesPerView: 2,
     },
     968: {
       spaceBetween: 400,
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1068: {
       spaceBetween: 400,
@@ -86,19 +86,19 @@ const News = () => {
     1440: {
       spaceBetween: 300,
     },
-    1533: {
+    1568: {
       spaceBetween: 100,
     },
-    1630: {
+    1668: {
       spaceBetween: 0,
     },
-    1730: {
+    1768: {
       spaceBetween: -100,
     },
-    1830: {
+    1868: {
       spaceBetween: -300,
     },
-    1910: {
+    1920: {
       spaceBetween: -300,
     },
   };

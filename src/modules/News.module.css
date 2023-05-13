@@ -151,7 +151,11 @@
 
 @media (max-width: 1800px) {
     .logical-container {
-        width: 1200px;
+        width: 1420px;
+    }
+
+    .swiper {
+        width: 112%;
     }
 }
 
@@ -162,13 +166,21 @@
 
 @media (max-width: 1600px) {
     .logical-container {
-        width: 1150px;
+        width: 1200px;
+    }
+
+    .swiper {
+        width: 116%;
     }
 }
 
 @media (max-width: 1500px) {
     .logical-container {
-        width: 1150px;
+        width: 1200px;
+    }
+
+    .swiper {
+        width: 110%;
     }
 
 }
@@ -181,7 +193,11 @@
 
 @media (max-width: 1300px) {
     .logical-container {
-        width: 1030px;
+        width: 1100px;
+    }
+
+    .swiper {
+        width: 108%;
     }
 }
 
@@ -193,7 +209,11 @@
 
 @media (max-width: 1100px) {
     .logical-container {
-        width: 800px;
+        width: 900px;
+    }
+
+    .swiper {
+        width: 104%;
     }
 }
 
@@ -201,17 +221,35 @@
     .logical-container {
         width: 700px;
     }
+
+    .swiper {
+        width: 114%;
+    }
 }
 
 @media (max-width: 892px) {
     .logical-container {
-        width: 600px;
+        width: 700px;
+    }
+
+    .swiper {
+        width: 107%;
     }
 }
 
 @media (max-width: 768px) {
     .logical-container {
         width: 70%;
+    }
+}
+
+@media (max-width: 468px) {
+    .logical-container {
+        width: 70%;
+    }
+
+    .swiper {
+        width: 110%;
     }
 
 }
