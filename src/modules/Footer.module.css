@@ -246,7 +246,15 @@ textarea:focus {
         width: 100%;
     }
 
+}
 
+@media (max-width: 240px) {
+    .contact-bottom-row {
+        width: 140px;
+    }
 
+    .contact-bottom-row textarea {
+        width: 140px;
+    }
 
 }

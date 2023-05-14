@@ -52,6 +52,10 @@ const News = () => {
   ];
 
   const swiperBreakpoints = {
+    240: {
+      spaceBetween: 500,
+      slidesPerView: 1,
+    },
     320: {
       spaceBetween: 400,
       slidesPerView: 1,
@@ -89,18 +93,22 @@ const News = () => {
     1568: {
       spaceBetween: 100,
     },
-    1668: {
-      spaceBetween: 0,
+    1500: {
+      spaceBetween: -138,
     },
-    1768: {
-      spaceBetween: -100,
+    1600: {
+      spaceBetween: -234,
     },
-    1868: {
-      spaceBetween: -300,
+    1700: {
+      spaceBetween: -294,
     },
-    1920: {
-      spaceBetween: -300,
+    1800: {
+      spaceBetween: -320,
     },
+    1900: {
+      spaceBetween: -360,
+    },
+
   };
 
   return (
