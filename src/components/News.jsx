@@ -12,7 +12,11 @@ import Image1 from "../assets/image1.png";
 import Image2 from "../assets/image2.png";
 import Image3 from "../assets/image3.png";
 import Image4 from "../assets/image4.png";
+import { useState } from "react";
+
 const News = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
   const swiperCardData = [
     {
       heading: "There are many variations of passages",
@@ -108,7 +112,6 @@ const News = () => {
     1900: {
       spaceBetween: -360,
     },
-
   };
 
   return (
@@ -137,6 +140,11 @@ const News = () => {
               className={classes["swiper-wrapper"]}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               rewind={true}
+              onSlideChange={(swiper) => {
+                setActiveSlide(swiper.activeIndex);
+                console.log(swiper.activeIndex);
+              }}
+              // onSwiper={(swiper) => console.log(swiper)}
               spaceBetween={-110}
               slidesPerView={3}
               breakpoints={swiperBreakpoints}
@@ -148,7 +156,11 @@ const News = () => {
               {swiperCardData.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className={`${classes["swiper-card"]}`}>
-                    <div className={classes["image-container"]}>
+                    <div
+                      className={`${classes["image-container"]} ${
+                        activeSlide == index && classes["active"]
+                      }`}
+                    >
                       <img
                         className={classes["swiper-card-img"]}
                         src={item.imageUrl}
