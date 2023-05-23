@@ -58,7 +58,7 @@ const Header = () => {
           <div className={classes["navbar-search-wrapper"]}>
             <form action="/">
               <div className={classes["form-item"]}>
-                <input type="text" placeholder="Search keyword ..." />
+                <input type="search" placeholder="Search keyword ..." />
                 <button><img src={SearchIcon} alt="" /></button>
               </div>
             </form>
