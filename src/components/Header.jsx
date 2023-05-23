@@ -22,7 +22,7 @@ const Header = () => {
     <>
       {showBurgerMenu && <BurgerMenu onCancel={cancelHandler} />}
       <header id="home" className={classes["header"]}>
-        <div className={classes["navbar-wrapper"]}>
+        <div className={classes["logical-container"]}>
 
           <div className={classes["navbar-logo"]}>
             <a href="/">

@@ -5,7 +5,6 @@ $primaryFont: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   font-family: $primaryFont;
-  scroll-behavior: smooth;
   position: relative;
 }
 
@@ -24,3 +23,6 @@ body {
   color: #fff;;
 }
 
+input::-webkit-search-cancel-button {
+  display: none;
+}

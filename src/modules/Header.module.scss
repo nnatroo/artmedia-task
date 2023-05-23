@@ -7,7 +7,7 @@
     margin-top: 28px;
   }
 
-  .navbar-wrapper {
+  .logical-container {
     width: 1420px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -28,8 +28,7 @@
     }
 
     @media (max-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-      padding-inline: 6%;
+      grid-template-columns: repeat(2, 2fr);
     }
 
     .navbar-logo {
@@ -37,6 +36,10 @@
       gap: 26px;
       align-items: center;
       justify-content: flex-start;
+
+      @media (max-width: 1024px) {
+        width: 200px;
+      }
 
       a {
         display: flex;
@@ -66,10 +69,6 @@
           }
         }
       }
-
-      @media (max-width: 1024px) {
-        width: 200px;
-      }
     }
 
     .navbar-links {
@@ -83,35 +82,34 @@
 
       ul {
         list-style: none;
-      }
 
-      li {
-        cursor: pointer;
-        transition: 0.1s;
-        position: relative;
-      }
+        li {
+          cursor: pointer;
+          transition: 0.1s;
+          position: relative;
 
-      a {
-        &:hover {
-          color: #ef5555;
-          transition: 600ms;
-        }
+          a {
+            &:hover {
+              color: #ef5555;
+              transition: 600ms;
 
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -5px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 0;
-          height: 2px;
-          background-color: #ef5555;
-          transition: 400ms;
-        }
+              &:after {
+                width: 26px;
+              }
 
-        &:hover {
-          &:after {
-            width: 26px;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 0;
+              height: 2px;
+              background-color: #ef5555;
+              transition: 400ms;
+            }
           }
         }
       }
@@ -194,9 +192,7 @@
         }
       }
 
-      &::-webkit-search-cancel-button {
-        display: none;
-      }
+
     }
 
     .form-item {
