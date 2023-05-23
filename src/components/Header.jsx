@@ -33,8 +33,8 @@ const Header = () => {
 
           <nav className={classes["navbar-links"]}>
             <ul className={classes["navbar-links-wrapper"]}>
-              <li>
-                <a className={classes["active-item"]} href="#home">Home</a>
+              <li className={classes["active-item"]}>
+                <a  href="#home">Home</a>
               </li>
 
               <li>
@@ -64,11 +64,13 @@ const Header = () => {
             </form>
           </div>
 
-          <div className={classes["navbar-burger-menu-wrapper"]}>
-            <img onClick={burgerClickHandler} src={BurgerMenuIcon} alt="" />
-          </div>
+          
         </div>
       </header>
+
+      {/* <div className={classes["navbar-burger-menu-wrapper"]}>
+        <img onClick={burgerClickHandler} src={BurgerMenuIcon} alt="" />
+      </div> */}
     </>
   );
 };
