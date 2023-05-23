@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "../modules/Header.module.css";
+import classes from "../modules/Header.module.scss";
 import CompanyLogo from "../assets/companyLogo.svg";
 import SearchIcon from "../assets/searchIcon.svg";
 import BurgerMenuIcon from "../assets/menuBurger.svg";
@@ -64,9 +64,9 @@ const Header = () => {
             </form>
           </div>
 
-          {/* <div className={classes["navbar-burger-menu-wrapper"]}>
+          <div className={classes["navbar-burger-menu-wrapper"]}>
             <img onClick={burgerClickHandler} src={BurgerMenuIcon} alt="" />
-          </div> */}
+          </div>
         </div>
       </header>
     </>

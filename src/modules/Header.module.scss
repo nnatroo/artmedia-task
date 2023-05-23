@@ -1,0 +1,318 @@
+.header {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    margin-top: 1.75rem;
+  }
+}
+
+.navbar-wrapper {
+  width: 1420px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 1680px) {
+  .navbar-wrapper {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navbar-wrapper {
+    width: 1100px;
+  }
+}
+
+.navbar-logo {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  justify-content: flex-start;
+
+  & a {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+  }
+}
+
+strong {
+  font-weight: 700;
+  font-size: 22px;
+  color: #2b3252;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b3252;
+  justify-content: center;
+}
+
+.navbar-links-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-links {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+    transition: 0.1s;
+    position: relative;
+  }
+
+  a {
+    &:hover {
+      color: #ef5555;
+      transition: 600ms;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #ef5555;
+      transition: 400ms;
+    }
+
+    &:hover::after {
+      width: 25px;
+    }
+  }
+}
+
+.active-item {
+  color: #ef5555;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 2px;
+    background-color: #ef5555;
+    transition: 400ms;
+  }
+}
+
+.navbar-links {
+  li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #ef5555;
+    transition: 400ms;
+  }
+
+  li:hover::after {
+    width: 25px;
+  }
+}
+
+.navbar-search-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #eaecf0;
+    padding-right: 26px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.form-item {
+  position: relative;
+
+  button {
+    cursor: pointer;
+    border: none;
+
+    img {
+      position: absolute;
+      right: 0px;
+      top: 6px;
+      background-image: url(../assets/searchIcon.svg);
+      width: 16px;
+      height: 16px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-burger-menu-wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1366px) {
+  .navbar-wrapper {
+    gap: 40px;
+  }
+
+  .navbar-links {
+    gap: 36px;
+  }
+
+  .navbar-brand {
+    img {
+      display: none;
+    }
+  }
+
+  .navbar-wrapper {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navbar-links {
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #2b3252;
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 30%;
+    }
+  }
+
+  .navbar-search-wrapper input {
+    width: 120px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-logo {
+    width: 200px;
+  }
+
+  .navbar-search-wrapper {
+    display: none;
+  }
+
+  .navbar-burger-menu-wrapper {
+    display: block;
+  }
+
+  .navbar-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar-burger-menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    img {
+      display: none;
+    }
+  }
+
+  .navbar-burger-menu-wrapper {
+    img {
+      width: 46px;
+    }
+  }
+
+  .navbar-logo strong {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .navbar-burger-menu-wrapper {
+    img {
+      width: 32px;
+    }
+  }
+
+  .navbar-logo strong {
+    font-size: 1rem;
+  }
+
+  .navbar-logo img {
+    width: 40px;
+  }
+  
+}
+
+@media (max-width: 420px) {
+  
+}
+
+@media (max-width: 365px) {
+  .navbar-burger-menu-wrapper {
+    img {
+      width: 22px;
+    }
+  }
+
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .navbar-logo a {
+    gap: 10px;
+  }
+
+  .navbar-logo strong {
+    font-size: 0.8rem;
+  }
+
+  .navbar-logo img {
+    width: 26px;
+  }
+}
