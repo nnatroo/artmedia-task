@@ -21,43 +21,54 @@ const Header = () => {
   return (
     <>
       {showBurgerMenu && <BurgerMenu onCancel={cancelHandler} />}
-      <section id="home" className={classes["header"]}>
+      <header id="home" className={classes["header"]}>
         <div className={classes["navbar-wrapper"]}>
-          <div className={classes["navbar-brand"]}>
-            <img src={CompanyLogo} alt="CompanyLogo" />
-            <h3>
-              COMPANY <br /> NAME
-            </h3>
+
+          <div className={classes["navbar-logo"]}>
+            <a href="/">
+              <img src={CompanyLogo} alt="CompanyLogo" />
+              <strong>Company Name</strong>
+            </a>
           </div>
 
           <nav className={classes["navbar-links"]}>
-            <a href="#home">
-              <li>Home</li>
-            </a>
-            <a href="#services">
-              <li>Services</li>
-            </a>
-            <a href="#projects">
-              <li>Projects</li>
-            </a>
-            <a href="#about">
-              <li>About</li>
-            </a>
-            <a href="#contact">
-              <li>Contact</li>
-            </a>
+            <ul className={classes["navbar-links-wrapper"]}>
+              <li>
+                <a className={classes["active-item"]} href="#home">Home</a>
+              </li>
+
+              <li>
+                <a href="#services">Services</a>
+              </li>
+
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+
+              <li>
+                <a href="#about">About</a>
+              </li>
+
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
           </nav>
 
           <div className={classes["navbar-search-wrapper"]}>
-            <input type="text" placeholder="Search keyword ..." />
-            <img src={SearchIcon} alt="" />
+            <form action="/">
+              <div className={classes["form-item"]}>
+                <input type="text" placeholder="Search keyword ..." />
+                <button><img src={SearchIcon} alt="" /></button>
+              </div>
+            </form>
           </div>
 
-          <div className={classes["navbar-burger-menu-wrapper"]}>
+          {/* <div className={classes["navbar-burger-menu-wrapper"]}>
             <img onClick={burgerClickHandler} src={BurgerMenuIcon} alt="" />
-          </div>
+          </div> */}
         </div>
-      </section>
+      </header>
     </>
   );
 };

@@ -10,8 +10,12 @@
 }
 
 a {
-  all: unset;
+  /* all: unset; */
+  text-decoration: none;
+  color: #2B3252 ;
 }
+
+
 
 body {
   scroll-behavior: smooth;

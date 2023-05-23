@@ -6,22 +6,33 @@
 
 .navbar-wrapper {
     width: 1420px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 210px max-content 210px;
+    grid-auto-flow: row;
     align-items: center;
+    justify-content: space-between;
+
 }
 
-.navbar-brand {
+.navbar-logo {
     display: flex;
     gap: 26px;
     align-items: center;
-    cursor: pointer;
+    justify-content: flex-start;
+    /* width: 150px; */
 }
 
-.navbar-brand h3 {
+.navbar-logo a {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.navbar-logo strong {
     font-weight: 700;
     font-size: 22px;
     color: #2B3252;
+    text-transform: uppercase;
 }
 
 .navbar-links {
@@ -33,15 +44,42 @@
     color: #2B3252;
 }
 
+.navbar-links-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar-links ul {
+    list-style: none;
+}
+
 .navbar-links li {
     cursor: pointer;
     transition: 0.1s;
     position: relative;
 }
 
-.navbar-links li:hover {
+.navbar-links a:hover {
     color: #EF5555;
 }
+
+.active-item {
+    color: #EF5555;
+}
+
+.active-item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #EF5555;
+    margin-left: calc(50% - 12.5px);
+    transition: transform 0.2s ease-in-out;
+    transform: scaleX(1);
+}
+
 
 .navbar-links li::after {
     content: '';
@@ -60,8 +98,13 @@
     transform: scaleX(1);
 }
 
+.navbar-search-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .navbar-search-wrapper input {
-    width: 210px;
+    /* width: 210px; */
     height: 30px;
     border: none;
     border-bottom: 1px solid #EAECF0;
@@ -72,9 +115,24 @@
     outline: none;
 }
 
-.navbar-search-wrapper img {
+.form-item {
+    position: relative;
+}
+
+.form-item button {
+    cursor: pointer;
+    border: none;
+}
+
+.form-item button img {
     position: absolute;
-    transform: translate(-20px, 6px);
+    right: 0px;
+    top: 6px;
+    background-image: url(../assets/searchIcon.svg);
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
 }
 
 .navbar-burger-menu-wrapper {
