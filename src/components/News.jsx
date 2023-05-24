@@ -1,4 +1,4 @@
-import classes from "../modules/News.module.css";
+import classes from "../modules/News.module.scss";
 import RightArrow from "../assets/rightArrow.svg";
 import { Fade } from "react-awesome-reveal";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";

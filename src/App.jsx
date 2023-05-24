@@ -13,7 +13,7 @@ function App() {
      <Header />
      <Hero />
      <Services />
-     {/* <News /> */}
+     <News />
      <About />
      <Footer />
     </>
