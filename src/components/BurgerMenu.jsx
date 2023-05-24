@@ -3,6 +3,8 @@ import classes from "../modules/BurgerMenu.module.scss";
 import SearchIcon from "../assets/searchIcon.svg";
 import "animate.css";
 import Hamburger from "hamburger-react";
+import NavbarLinks from "../UI/NavbarLinks";
+
 
 const BurgerMenu = (props) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
@@ -12,9 +14,9 @@ const BurgerMenu = (props) => {
     setButtonClicked(!buttonClicked);
     setTimeout(() => {
       setShowBurgerMenu(!showBurgerMenu);
-    }, 200);
+    }, 360 );
 
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
   };
 
   // const cancelHandler = () => {
@@ -41,12 +43,6 @@ const BurgerMenu = (props) => {
             buttonClicked ? "animate__slideInDown" : "animate__slideOutUp"
           } animate__slideInDown animate__faster`}
         >
-          {/* <img
-            className={classes["close-btn"]}  
-            onClick={cancelHandler}
-            src={XSymbol}
-            alt=""
-          /> */}
 
           <div className={classes["menu-container"]}>
             <div className={classes["navbar-search-wrapper"]}>
@@ -54,11 +50,9 @@ const BurgerMenu = (props) => {
               <img src={SearchIcon} alt="" />
             </div>
 
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
+            <div className={classes["navbar-link-wrapper"]}>
+              <NavbarLinks />
+            </div>
           </div>
         </div>
       )}
