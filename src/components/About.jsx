@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../modules/About.module.css";
+import classes from "../modules/About.module.scss";
 import AboutImage from "../assets/aboutImage.png";
 import Arrow from "../assets/orangeArrow.svg";
 import { Slide } from "react-awesome-reveal";

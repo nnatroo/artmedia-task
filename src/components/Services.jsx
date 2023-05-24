@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../modules/Services.module.css";
+import classes from "../modules/Services.module.scss";
 import FirstServiceLogo from "../assets/firstServiceLogo.svg";
 import SecondServiceLogo from "../assets/secondServiceLogo.svg";
 import ThirdServiceLogo from "../assets/thirdServiceLogo.svg";

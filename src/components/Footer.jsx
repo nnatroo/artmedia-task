@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../modules/Footer.module.css";
+import classes from "../modules/Footer.module.scss";
 import FooterBrand from "../assets/footerBrand.svg";
 import InstagramLogo from "../assets/instagramLogo.svg";
 import FacebookLogo from "../assets/facebookLogo.png";
@@ -18,20 +18,23 @@ const Footer = () => {
           </div>
 
           <div className={classes["footer-links-wrapper"]}>
-            <div className={classes["footer-links"]}>
-              <a href="#services">
-                <li>Services</li>
-              </a>
-              <a href="#projects">
-                <li>Projects</li>
-              </a>
-              <a href="#about">
-                <li>About</li>
-              </a>
-              <a href="#contact">
-                <li>Contact</li>
-              </a>
-            </div>
+            <ul className={classes["footer-links"]}>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+
+              <li>
+                <a href="#about">About</a>
+              </li>
+
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
             <div className={classes["footer-links-socials"]}>
               <img src={InstagramLogo} alt="" />
               <img src={FacebookLogo} alt="" />
@@ -54,6 +57,7 @@ const Footer = () => {
               <button>Send</button>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
