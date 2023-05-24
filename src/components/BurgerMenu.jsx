@@ -5,19 +5,31 @@ import "animate.css";
 import Hamburger from "hamburger-react";
 import NavbarLinks from "../UI/NavbarLinks";
 
-
 const BurgerMenu = (props) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
-  const [buttonClicked, setButtonClicked] = useState(false);
+  const [menuClose, setMenuClose] = useState(false);
 
   const burgerClickHandler = () => {
-    setButtonClicked(!buttonClicked);
-    setTimeout(() => {
-      setShowBurgerMenu(!showBurgerMenu);
-    }, 360 );
-
-    // document.body.style.overflow = "hidden";
+    if (showBurgerMenu === false) {
+      setShowBurgerMenu(true);
+    }
+    if (showBurgerMenu === true) {
+      setMenuClose(true);
+      setTimeout(() => {
+        setShowBurgerMenu(false);
+        setMenuClose(false);
+      }, 400);
+    }
   };
+
+  // const burgerClickHandler = () => {
+  //   setButtonClicked(!buttonClicked);
+  //   setTimeout(() => {
+  //     setShowBurgerMenu(!showBurgerMenu);
+  //   }, 0);
+
+  //   // document.body.style.overflow = "hidden";
+  // };
 
   // const cancelHandler = () => {
   //   setShowBurgerMenu(false);
@@ -39,11 +51,11 @@ const BurgerMenu = (props) => {
 
       {showBurgerMenu && (
         <div
-          className={`${classes["menu-wrapper"]} animate__animated ${
-            buttonClicked ? "animate__slideInDown" : "animate__slideOutUp"
-          } animate__slideInDown animate__faster`}
+          className={`${classes["menu-wrapper"]} animate__animated
+          ${showBurgerMenu && "animate__slideInDown"}
+          ${menuClose && "animate__slideOutUp"}
+           animate__faster`}
         >
-
           <div className={classes["menu-container"]}>
             <div className={classes["navbar-search-wrapper"]}>
               <input type="text" placeholder="Search keyword ..." />
