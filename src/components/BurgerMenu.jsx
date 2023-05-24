@@ -1,41 +1,52 @@
 import React, { useState } from "react";
 import classes from "../modules/BurgerMenu.module.scss";
 import SearchIcon from "../assets/searchIcon.svg";
-import XSymbol from "../assets/xSymbol.svg";
 import "animate.css";
-import BurgerMenuIcon from '../assets/menuBurger.svg';
+import Hamburger from "hamburger-react";
 
 const BurgerMenu = (props) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   const burgerClickHandler = () => {
-    setShowBurgerMenu(!showBurgerMenu);
+    setButtonClicked(!buttonClicked);
+    setTimeout(() => {
+      setShowBurgerMenu(!showBurgerMenu);
+    }, 200);
+
     document.body.style.overflow = "hidden";
   };
 
-  const cancelHandler = () => {
-    setShowBurgerMenu(false);
-    document.body.style.overflow = "visible";
-  };
+  // const cancelHandler = () => {
+  //   setShowBurgerMenu(false);
+  //   document.body.style.overflow = "visible";
+  // };
 
   return (
     <>
       {true && (
-        <div onClick={burgerClickHandler} className={classes["navbar-burger-menu-wrapper"]}>
-          <img src={BurgerMenuIcon} alt="" />
+        <div
+          onClick={burgerClickHandler}
+          className={`${classes["navbar-burger-menu-wrapper"]} ${
+            showBurgerMenu && classes["white-burger"]
+          }`}
+        >
+          <Hamburger />
         </div>
       )}
 
       {showBurgerMenu && (
         <div
-          className={`${classes["menu-wrapper"]} animate__animated animate__slideInDown`}
+          className={`${classes["menu-wrapper"]} animate__animated ${
+            buttonClicked ? "animate__slideInDown" : "animate__slideOutUp"
+          } animate__slideInDown animate__faster`}
         >
-          <img
-            className={classes["close-btn"]}
+          {/* <img
+            className={classes["close-btn"]}  
             onClick={cancelHandler}
             src={XSymbol}
             alt=""
-          />
+          /> */}
 
           <div className={classes["menu-container"]}>
             <div className={classes["navbar-search-wrapper"]}>

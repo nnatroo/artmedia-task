@@ -95,15 +95,17 @@ const News = () => {
     // 1440: {
     //   spaceBetween: 300,
     // },
-    // 1568: {
-    //   spaceBetween: 100,
-    // },
-    // 1500: {
-    //   spaceBetween: -138,
-    // },
-    // 1600: {
-    //   spaceBetween: -234,
-    // },
+    1568: {
+      spaceBetween: 100,
+      slidesPerView: 5, 
+    },
+    1500: {
+      spaceBetween: 400,
+      slidesPerView: 6,
+    },
+    1600: {
+      spaceBetween: -234,
+    },
     1700: {
       spaceBetween: -294,
     },

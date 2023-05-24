@@ -3,8 +3,9 @@
     top: 0;
     right: 0;
     margin-right: 20px;
-    padding-top: 28px;
+    padding-top: 32px;
     display: none;
+    z-index: 101;
 
     @media (max-width: 1024px) {
         display: block;
@@ -91,3 +92,12 @@
 // .no-scroll {
 //     overflow: hidden;
 // }
+
+.white-burger {
+    filter: brightness(0) invert(1);
+}
+
+.slide-up {
+    transform: translateY(-1000px);
+}
+
