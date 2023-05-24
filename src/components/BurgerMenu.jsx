@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../modules/BurgerMenu.module.css";
+import classes from "../modules/BurgerMenu.module.scss";
 import SearchIcon from "../assets/searchIcon.svg";
 import XSymbol from "../assets/xSymbol.svg";
 import "animate.css";
