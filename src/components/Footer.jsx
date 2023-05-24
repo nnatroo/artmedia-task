@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../modules/Footer.module.scss";
+import layout from "../modules/Layout.module.scss";
 import FooterBrand from "../assets/footerBrand.svg";
 import InstagramLogo from "../assets/instagramLogo.svg";
 import FacebookLogo from "../assets/facebookLogo.png";
@@ -7,7 +8,7 @@ import FacebookLogo from "../assets/facebookLogo.png";
 const Footer = () => {
   return (
     <section className={classes["footer"]}>
-      <div className={classes["logical-container"]}>
+      <div className={`${classes["container"]} ${layout["container"]}`}>
         <div className={classes["footer-content"]}>
           <div className={classes["footer-brand-wrapper"]}>
             <div className={classes["footer-brand"]}>

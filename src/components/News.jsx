@@ -57,53 +57,53 @@ const News = () => {
   ];
 
   const swiperBreakpoints = {
-    240: {
-      spaceBetween: 500,
-      slidesPerView: 1,
-    },
-    320: {
-      spaceBetween: 400,
-      slidesPerView: 1,
-    },
-    768: {
-      spaceBetween: 300,
-      slidesPerView: 2,
-    },
-    868: {
-      spaceBetween: 300,
-      slidesPerView: 2,
-    },
-    968: {
-      spaceBetween: 400,
-      slidesPerView: 3,
-    },
-    1068: {
-      spaceBetween: 400,
-      slidesPerView: 3,
-    },
-    1168: {
-      spaceBetween: 400,
-      slidesPerView: 3,
-    },
-    1268: {
-      spaceBetween: 400,
-      slidesPerView: 3,
-    },
-    1368: {
-      spaceBetween: 300,
-    },
-    1440: {
-      spaceBetween: 300,
-    },
-    1568: {
-      spaceBetween: 100,
-    },
-    1500: {
-      spaceBetween: -138,
-    },
-    1600: {
-      spaceBetween: -234,
-    },
+    // 240: {
+    //   spaceBetween: 500,
+    //   slidesPerView: 1,
+    // },
+    // 320: { 
+    //   spaceBetween: 400,
+    //   slidesPerView: 1,
+    // },
+    // 768: {
+    //   spaceBetween: 300,
+    //   slidesPerView: 2,
+    // },
+    // 868: {
+    //   spaceBetween: 300,
+    //   slidesPerView: 2,
+    // },
+    // 968: {
+    //   spaceBetween: 400,
+    //   slidesPerView: 3,
+    // },
+    // 1068: {
+    //   spaceBetween: 400,
+    //   slidesPerView: 3,
+    // },
+    // 1168: {
+    //   spaceBetween: 400,
+    //   slidesPerView: 3,
+    // },
+    // 1268: {
+    //   spaceBetween: 400,
+    //   slidesPerView: 3,
+    // },
+    // 1368: {
+    //   spaceBetween: 300,
+    // },
+    // 1440: {
+    //   spaceBetween: 300,
+    // },
+    // 1568: {
+    //   spaceBetween: 100,
+    // },
+    // 1500: {
+    //   spaceBetween: -138,
+    // },
+    // 1600: {
+    //   spaceBetween: -234,
+    // },
     1700: {
       spaceBetween: -294,
     },

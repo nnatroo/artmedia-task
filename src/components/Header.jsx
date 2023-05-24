@@ -3,8 +3,6 @@ import classes from "../modules/Header.module.scss";
 import layout from "../modules/Layout.module.scss";
 import CompanyLogo from "../assets/companyLogo.svg";
 import SearchIcon from "../assets/searchIcon.svg";
-import BurgerMenuIcon from "../assets/menuBurger.svg";
-import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../modules/About.module.scss";
+import layout from "../modules/Layout.module.scss";
 import AboutImage from "../assets/aboutImage.png";
 import Arrow from "../assets/orangeArrow.svg";
 import { Slide } from "react-awesome-reveal";
@@ -7,7 +8,7 @@ import { Slide } from "react-awesome-reveal";
 const About = () => {
   return (
     <Slide>
-      <div id="about" className={classes["logical-container"]}>
+      <div id="about" className={`${classes["container"]} ${layout["container"]}`}>
         <section className={classes["about-section"]}>
           <div className={classes["image-wrapper"]}>
             <div className={classes["about-image-border"]} />
