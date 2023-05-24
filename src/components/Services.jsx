@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../modules/Services.module.scss";
+import layout from "../modules/Layout.module.scss";
 import FirstServiceLogo from "../assets/firstServiceLogo.svg";
 import SecondServiceLogo from "../assets/secondServiceLogo.svg";
 import ThirdServiceLogo from "../assets/thirdServiceLogo.svg";
@@ -9,7 +10,7 @@ import Tilt from "react-parallax-tilt";
 const Services = () => {
   return (
     <Slide>
-      <div id="services" className={classes["services-wrapper"]}>
+      <div id="services" className={`${classes["services-wrapper"]} ${layout["container"]}`}>
         <h1>Services</h1>
 
         <div className={classes["services-items"]}>

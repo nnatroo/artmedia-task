@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../modules/Hero.module.scss";
+import layout from "../modules/Layout.module.scss";
 import Arrow from "../assets/arrow.svg";
 import { Fade } from "react-awesome-reveal";
 import HeroBackground from "../assets/heroBackground.svg";
@@ -16,7 +17,7 @@ const Hero = () => {
         />
         <img className={classes["hero-image"]} src={HeroImage} alt="" />
 
-        <div className={classes["logical-container"]}>
+        <div className={`${classes["container"]} ${layout["container"]}`}>
           <div className={classes["text-wrapper"]}>
             <h1>Company’s First Service Title</h1>
             <p>
