@@ -1,3 +1,16 @@
+.navbar-burger-menu-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    padding-top: 28px;
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: block;
+    }
+}
+
 .menu-wrapper {
     position: absolute;
     background-color: #ef5555;

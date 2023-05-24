@@ -7,21 +7,8 @@ import BurgerMenuIcon from "../assets/menuBurger.svg";
 import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
-  const [showBurgerMenu, setShowBurgerMenu] = useState(false);
-
-  const burgerClickHandler = () => {
-    setShowBurgerMenu(!showBurgerMenu);
-    document.body.style.overflow = "hidden";
-  };
-
-  const cancelHandler = () => {
-    setShowBurgerMenu(false);
-    document.body.style.overflow = "visible";
-  };
-
   return (
     <>
-      {showBurgerMenu && <BurgerMenu onCancel={cancelHandler} />}
       <header id="home" className={classes["header"]}>
         <div className={`${classes["container"]} ${layout["container"]}`}>
           <div className={classes["navbar-logo"]}>
@@ -65,12 +52,6 @@ const Header = () => {
               </div>
             </form>
           </div>
-
-          {false && (
-            <div className={classes["navbar-burger-menu-wrapper"]}>
-              <img onClick={burgerClickHandler} src={BurgerMenuIcon} alt="" />
-            </div>
-          )}
         </div>
       </header>
     </>
