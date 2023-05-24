@@ -15,21 +15,27 @@
     gap: 16px;
 
     @media (max-width: 1680px) {
-      // width: 1200px;
+      width: 1200px;
     }
 
     @media (max-width: 1440px) {
-      // width: 1100px;
+      width: 1100px;
     }
 
     @media (max-width: 1366px) {
       gap: 40px;
-      // width: 1000px;
+      width: 900px;
     }
 
     @media (max-width: 1024px) {
-      grid-template-columns: repeat(2, 2fr);
+      grid-template-columns: repeat(3, 1fr);
+      width: 700px;
     }
+
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+    
 
     .navbar-logo {
       display: flex;
@@ -168,7 +174,7 @@
       justify-content: flex-end;
 
       @media (max-width: 768px) {
-        display: none;
+        // display: none;
       }
 
 
