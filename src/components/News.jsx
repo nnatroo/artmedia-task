@@ -1,4 +1,5 @@
 import classes from "../modules/News.module.scss";
+import layout from "../modules/Layout.module.scss";
 import RightArrow from "../assets/rightArrow.svg";
 import { Fade } from "react-awesome-reveal";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -117,7 +118,7 @@ const News = () => {
   return (
     <Fade>
       <div id="projects" className={classes["news-wrapper"]}>
-        <div className={classes["logical-container"]}>
+        <div className={`${classes["container"]} ${layout["container"]}`}>
           <div className={classes["top-bar"]}>
             <h1>News</h1>
             <div className={classes["arrows-wrapper"]}>

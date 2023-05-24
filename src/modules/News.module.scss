@@ -4,11 +4,9 @@
   margin-top: 9.75rem;
   padding-bottom: 9.75rem;
 
-  .logical-container {
+  .container {
     width: 1420px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 
     @media (min-width: 1900px) {
       width: 1420px;
