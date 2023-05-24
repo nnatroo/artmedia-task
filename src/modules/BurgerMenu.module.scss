@@ -28,18 +28,6 @@
     color: white;
     padding-top: 4rem;
 
-    .close-btn {
-        align-self: flex-end;
-        transform: scale(1.6);
-        cursor: pointer;
-        margin-right: 60px;
-
-        &:hover {
-            transition: all 0.2s;
-            transform: scale(2);
-        }
-    }
-
 
     .menu-container {
         display: flex;
@@ -56,9 +44,9 @@
                 height: 50px;
                 border: none;
                 border-bottom: 1px solid #EAECF0;
-                padding-right: 26px;
                 border-radius: 10px;
-                padding-inline: 14px;
+                padding-left: 18px;
+                padding-right: 36px ;
                 font-size: 1.2rem;
                 margin-bottom: 2rem;
 
@@ -71,9 +59,11 @@
                 }
             }
 
-            img {
+            button {    
                 position: absolute;
-                transform: translate(-30px, 18px);
+                transform: translate(-32px, 18px);
+                background-color: transparent;
+                border: none;
             }
         }
 
@@ -92,17 +82,9 @@
     }
 }
 
-// .no-scroll {
-//     overflow: hidden;
-// }
-
 .white-burger {
     filter: brightness(0) invert(1);
 }
-
-// .slide-up {
-//     transform: translateY(-1000px);
-// }
 
 .navbar-link-wrapper {
     ul {

@@ -22,20 +22,6 @@ const BurgerMenu = (props) => {
     }
   };
 
-  // const burgerClickHandler = () => {
-  //   setButtonClicked(!buttonClicked);
-  //   setTimeout(() => {
-  //     setShowBurgerMenu(!showBurgerMenu);
-  //   }, 0);
-
-  //   // document.body.style.overflow = "hidden";
-  // };
-
-  // const cancelHandler = () => {
-  //   setShowBurgerMenu(false);
-  //   document.body.style.overflow = "visible";
-  // };
-
   return (
     <>
       {true && (
@@ -59,7 +45,9 @@ const BurgerMenu = (props) => {
           <div className={classes["menu-container"]}>
             <div className={classes["navbar-search-wrapper"]}>
               <input type="text" placeholder="Search keyword ..." />
-              <img src={SearchIcon} alt="" />
+              <button>
+                <img src={SearchIcon} alt="" />
+              </button>
             </div>
 
             <div className={classes["navbar-link-wrapper"]}>
