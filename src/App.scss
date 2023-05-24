@@ -6,7 +6,7 @@ $primaryFont: 'Montserrat', sans-serif;
   padding: 0;
   font-family: $primaryFont;
   position: relative;
-  
+  scroll-behavior: smooth;
 }
 
 a {
@@ -15,7 +15,6 @@ a {
 }
 
 body {
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
