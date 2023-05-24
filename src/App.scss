@@ -6,6 +6,7 @@ $primaryFont: 'Montserrat', sans-serif;
   padding: 0;
   font-family: $primaryFont;
   position: relative;
+  
 }
 
 a {
@@ -16,6 +17,7 @@ a {
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 8000px;
 }
 
 ::selection {
