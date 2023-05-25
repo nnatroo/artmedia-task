@@ -14,7 +14,7 @@ function App() {
      <Header />
      <BurgerMenu />
      <Hero />
-     <Services />
+     {/* <Services /> */}
      {/* <News /> */}
      {/* <About /> */}
      {/* <Footer /> */}

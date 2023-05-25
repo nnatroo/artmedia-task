@@ -19,3 +19,25 @@
         margin-inline: 20px;
     }
 }
+
+.wide-container {
+    width: 1600px;
+    margin: 0 auto;
+
+    @media (max-width: 1680px) {
+        width: 1400px;
+    }
+
+    @media (max-width: 1440px) {
+        width: 1240px;
+    }
+
+    @media (max-width: 1280px) {
+        width: 1000px;
+    }
+
+    @media (max-width: 1024px) {
+        width: auto;
+        margin-inline: 20px;
+    }
+}
