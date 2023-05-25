@@ -9,27 +9,32 @@ const Hero = () => {
   return (
     <Fade>
       <div className={classes["hero-section"]}>
+        <div className={`${classes["hero-image-container"]} ${layout["wide"]}`}>
+          <figure>
+            <img
+              className={classes["hero-image"]}
+              src={HeroImage}
+              alt="hero-image"
+            />
+          </figure>
 
-        <div className={`${classes["hero-image-container"]} ${layout["wide-container"]}`}>
-          <img
-            className={classes["hero-image"]}
-            src={HeroImage}
-            alt="hero-image"
-          />
-        </div>
-
-        <div className={`${classes["container"]} ${layout["container"]}`}>
-          <div className={classes["text-wrapper"]}>
-            <h1>Company’s First Service Title</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat
-            </p>
-            <button>
-              See More <img src={Arrow} alt="" />
-            </button>
+          <div className={`${classes["container"]} ${layout["container"]}`}>
+            <div className={classes["text-wrapper"]}>
+              <h1>Company’s First Service Title</h1>
+              <div className={classes['text']}>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+              </div>
+              <div className={classes["btn"]}>
+                <a>
+                  See More <img src={Arrow} alt="" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
