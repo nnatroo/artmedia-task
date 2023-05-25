@@ -13,11 +13,11 @@ function App() {
     <>
      <Header />
      <BurgerMenu />
-     {/* <Hero />
-     <Services />
-     <News />
-     <About />
-     <Footer /> */}
+     {/* <Hero /> */}
+     {/* <Services /> */}
+     {/* <News /> */}
+     {/* <About /> */}
+     {/* <Footer /> */}
     </>
   )
 }

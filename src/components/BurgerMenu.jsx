@@ -12,13 +12,14 @@ const BurgerMenu = (props) => {
   const burgerClickHandler = () => {
     if (showBurgerMenu === false) {
       setShowBurgerMenu(true);
+
     }
     if (showBurgerMenu === true) {
       setMenuClose(true);
       setTimeout(() => {
         setShowBurgerMenu(false);
         setMenuClose(false);
-      }, 400);
+      }, 0);
     }
   };
 
@@ -36,11 +37,9 @@ const BurgerMenu = (props) => {
       )}
 
       {showBurgerMenu && (
+
         <div
-          className={`${classes["menu-wrapper"]} animate__animated
-          ${showBurgerMenu && "animate__slideInDown"}
-          ${menuClose && "animate__slideOutUp"}
-           animate__faster`}
+          className={`${classes["menu-wrapper"]} ${showBurgerMenu && classes["menu-open"]}`}
         >
           <div className={classes["menu-container"]}>
             <div className={classes["navbar-search-wrapper"]}>
