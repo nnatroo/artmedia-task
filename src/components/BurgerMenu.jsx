@@ -6,21 +6,10 @@ import Hamburger from "hamburger-react";
 import NavbarLinks from "../UI/NavbarLinks";
 
 const BurgerMenu = (props) => {
-  const [showBurgerMenu, setShowBurgerMenu] = useState(false);
-  const [menuClose, setMenuClose] = useState(false);
+  const [toggleBurgerMenu, setToggleBurgerMenu] = useState(false);
 
   const burgerClickHandler = () => {
-    if (showBurgerMenu === false) {
-      setShowBurgerMenu(true);
-
-    }
-    if (showBurgerMenu === true) {
-      setMenuClose(true);
-      setTimeout(() => {
-        setShowBurgerMenu(false);
-        setMenuClose(false);
-      }, 0);
-    }
+    setToggleBurgerMenu(!toggleBurgerMenu);
   };
 
   return (
@@ -28,18 +17,18 @@ const BurgerMenu = (props) => {
       {true && (
         <div
           onClick={burgerClickHandler}
-          className={`${classes["navbar-burger-menu-wrapper"]} ${
-            showBurgerMenu && classes["white-burger"]
-          }`}
-        >
+          className={`
+          ${classes["navbar-burger-menu-wrapper"]}
+          ${toggleBurgerMenu && classes["white-burger"]}
+          `}>
           <Hamburger />
         </div>
       )}
 
-      {showBurgerMenu && (
+      {true && (
 
         <div
-          className={`${classes["menu-wrapper"]} ${showBurgerMenu && classes["menu-open"]}`}
+      className={`${classes["menu-wrapper"]} ${toggleBurgerMenu && classes["open"]}`}
         >
           <div className={classes["menu-container"]}>
             <div className={classes["navbar-search-wrapper"]}>
