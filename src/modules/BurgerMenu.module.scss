@@ -2,13 +2,20 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 20px;
-    padding-top: 32px;
+    margin-right: 50px;
+    padding-top: 24px;
     display: none;
     z-index: 101;
+    transform: scale(0.9);
 
     @media (max-width: 1024px) {
         display: block;
+    }
+
+    @media (max-width: 365px) {
+        padding-top: 20px;
+        margin-right: 20px;
+        transform: scale(0.8);
     }
 }
 

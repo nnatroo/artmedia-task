@@ -57,63 +57,60 @@ const News = () => {
   ];
 
   const swiperBreakpoints = {
-    // 240: {
-    //   spaceBetween: 500,
-    //   slidesPerView: 1,
-    // },
-    // 320: { 
-    //   spaceBetween: 400,
-    //   slidesPerView: 1,
-    // },
-    // 768: {
-    //   spaceBetween: 300,
-    //   slidesPerView: 2,
-    // },
-    // 868: {
-    //   spaceBetween: 300,
-    //   slidesPerView: 2,
-    // },
-    // 968: {
-    //   spaceBetween: 400,
-    //   slidesPerView: 3,
-    // },
-    // 1068: {
-    //   spaceBetween: 400,
-    //   slidesPerView: 3,
-    // },
-    // 1168: {
-    //   spaceBetween: 400,
-    //   slidesPerView: 3,
-    // },
-    // 1268: {
-    //   spaceBetween: 400,
-    //   slidesPerView: 3,
-    // },
-    // 1368: {
-    //   spaceBetween: 300,
-    // },
-    // 1440: {
-    //   spaceBetween: 300,
-    // },
-    1568: {
-      spaceBetween: 100,
-      slidesPerView: 5, 
+    240: {
+      spaceBetween: 500,
+      slidesPerView: 1,
     },
-    1500: {
+    320: {
       spaceBetween: 400,
-      slidesPerView: 6,
+      slidesPerView: 1,
     },
-    1600: {
-      spaceBetween: -234,
+    0: {
+      spaceBetween: 300,
+      slidesPerView: 2,
     },
-    1700: {
-      spaceBetween: -294,
+    0: {
+      spaceBetween: 300,
+      slidesPerView: 2,
     },
-    1800: {
-      spaceBetween: -320,
+    0: {
+      spaceBetween: 400,
+      slidesPerView: 3,
     },
-    1900: {
-      spaceBetween: -360,
+    0: {
+      spaceBetween: 400,
+      slidesPerView: 3,
+    },
+    0: {
+      spaceBetween: 400,
+      slidesPerView: 2,
+    },
+    0: {
+      spaceBetween: 400,
+      slidesPerView: 2,
+    },
+    0: {
+      spaceBetween: 300,
+      slidesPerView: 2,
+    },
+    1024: {
+      spaceBetween: 100,
+      slidesPerView: 2,
+    },
+    1280: {
+      spaceBetween: 100,
+      slidesPerView: 2,
+    },
+    1366: {
+      spaceBetween: 100,
+      slidesPerView: 2,
+    },
+    1440: {
+      spaceBetween: 200,
+      slidesPerView: 2,
+    },
+    1680: {
+      spaceBetween: -100,
     },
   };
 

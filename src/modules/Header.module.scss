@@ -21,7 +21,6 @@ header {
     
     .navbar-logo {
       display: flex;
-      gap: 26px;
       align-items: center;
       justify-content: flex-start;
 
@@ -29,18 +28,24 @@ header {
         width: 200px;
       }
 
+      @media (max-width: 576px) {
+      }
+
       a {
         display: flex;
         gap: 20px;
         align-items: center;
+        @media (max-width: 1280px) {
+          gap: 12px;
+        }
 
         img {
           @media (max-width: 1280px) {
             width: 30%;
           }
 
-          @media (max-width: 768px) {
-            // display: none;
+          @media (max-width: 365px) {
+            width: 20%;
           }
         }
 
@@ -54,6 +59,11 @@ header {
             font-weight: 700;
             font-size: 18px;
             color: #2b3252;
+          }
+
+          @media (max-width: 1024px) {
+            font-size: 14px;
+            max-width: 50px;
           }
         }
       }

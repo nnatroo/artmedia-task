@@ -21,7 +21,7 @@ const BurgerMenu = (props) => {
           ${classes["navbar-burger-menu-wrapper"]}
           ${toggleBurgerMenu && classes["white-burger"]}
           `}>
-          <Hamburger />
+          <Hamburger/>
         </div>
       )}
 

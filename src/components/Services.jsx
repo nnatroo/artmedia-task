@@ -13,7 +13,8 @@ const Services = () => {
       <div id="services" className={`${classes["services-wrapper"]} ${layout["container"]}`}>
         <h1>Services</h1>
 
-        <div className={classes["services-items"]}>
+        <div className={`${classes["services-items"]}`}>
+          
           <div className={classes["col"]}>
             <Tilt>
               <img src={FirstServiceLogo} alt="" />

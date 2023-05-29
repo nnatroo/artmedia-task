@@ -14,9 +14,17 @@
         width: 1000px;
     }
 
+    @media (max-width: 1168px) {
+        width: 900px;
+    }
+
     @media (max-width: 1024px) {
         width: auto;
-        margin-inline: 20px;
+        margin-inline: 60px;
+    }
+
+    @media (max-width: 365px) {
+        margin-inline: 30px;
     }
 }
 
@@ -33,6 +41,10 @@
     }
 
     @media (max-width: 1280px) {
+        width: 1140px;
+    }
+
+    @media (max-width: 1168px) {
         width: 1000px;
     }
 
