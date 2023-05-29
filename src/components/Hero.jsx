@@ -7,7 +7,7 @@ import HeroImage from "../assets/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <Fade>
+    // <Fade>
       <div className={`${classes["hero-image-container"]} ${layout["wide"]}`}>
 
         <figure>
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </Fade>
+    // </Fade>
   );
 };
 
