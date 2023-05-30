@@ -9,7 +9,7 @@ import Tilt from "react-parallax-tilt";
 
 const Services = () => {
   return (
-    <Slide>
+    // <Slide>
       <div
         id="services"
         className={`${classes["services-wrapper"]} ${layout["container"]}`}
@@ -54,7 +54,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </Slide>
+    // </Slide>
   );
 };
 

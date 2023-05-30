@@ -88,7 +88,7 @@ const News = () => {
   ];
 
   return (
-    <Fade>
+    // <Fade>
     <div id="projects" className={classes["news-wrapper"]}>
       <div className={`${classes["container"]} ${layout["container"]}`}>
         <div className={classes["top-bar"]}>
@@ -156,7 +156,7 @@ const News = () => {
         </div>
       </div>
     </div>
-    </Fade>
+    // </Fade>
   );
 };
 

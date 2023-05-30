@@ -7,7 +7,7 @@ import { Slide } from "react-awesome-reveal";
 
 const About = () => {
   return (
-    <Slide>
+    // <Slide>
       <div
         id="about"
         className={`${classes["container"]} ${layout["container"]}`}
@@ -40,7 +40,7 @@ const About = () => {
           </div>
         </section>
       </div>
-    </Slide>
+    // </Slide>
   );
 };
 
