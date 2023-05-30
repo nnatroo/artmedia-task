@@ -75,6 +75,9 @@
     }
 
     .swiper-card {
+      overflow: visible;
+      transform: translateY(-10px);
+
       .image-container {
         display: inline-block;
 
@@ -94,11 +97,10 @@
         &::after {
           content: "";
           position: absolute;
-          top: 0;
+          bottom: 0;
           left: 0;
           width: 100%;
-          height: 100%;
-          transform: translateY(-3px);
+          height: 100%; 
           background-image: linear-gradient(205.96deg,
               rgba(67, 26, 26, 0) -7.14%,
               #431a1a 121.86%);
@@ -107,14 +109,14 @@
 
       .active::before {
         content: "";
-        z-index: -12;
+        z-index: -111;
         background-color: #ff5757;
         position: absolute;
-        top: 0px;
+        bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
         width: 98%;
-        height: 100%;
+        height: 10px;
       }
 
       .swiper-card-content {

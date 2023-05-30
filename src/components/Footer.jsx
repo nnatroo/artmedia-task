@@ -15,7 +15,7 @@ const Footer = () => {
               <img src={FooterBrand} alt="" />
               <h1>Company Name</h1>
             </div>
-            <p>© 2023 All Rights Reserved</p>
+            <p>© {new Date().getFullYear()} All Rights Reserved</p>
           </div>
 
           <div className={classes["footer-links-wrapper"]}>
