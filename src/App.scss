@@ -1,4 +1,4 @@
-$primaryFont: 'Montserrat', sans-serif;
+$primaryFont: "Montserrat", sans-serif;
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #2B3252 ;
+  color: #2b3252;
 }
 
 img {
@@ -28,13 +28,12 @@ body {
 
 ::selection {
   background-color: #ef5555;
-  color: #fff;;
+  color: #fff;
 }
 
 input::-webkit-search-cancel-button {
   display: none;
 }
-
 
 img {
   user-drag: none; /* Disable dragging of the image in some browsers */
@@ -43,4 +42,9 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+// Temporary
+::-webkit-scrollbar {
+  display: none;
 }
