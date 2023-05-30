@@ -9,50 +9,52 @@ import Tilt from "react-parallax-tilt";
 
 const Services = () => {
   return (
-    <div
-      id="services"
-      className={`${classes["services-wrapper"]} ${layout["container"]}`}
-    >
-      <h2>Services</h2>
+    <Slide>
+      <div
+        id="services"
+        className={`${classes["services-wrapper"]} ${layout["container"]}`}
+      >
+        <h2>Services</h2>
 
-      <div className={`${classes["services-items"]}`}>
-        <div className={classes["col"]}>
-          <div className={classes["col-content"]} href="/">
-            <figure>
-              <a href="/">
-                <img src={FirstServiceLogo} alt="" />
-              </a>
-            </figure>
+        <div className={`${classes["services-items"]}`}>
+          <div className={classes["col"]}>
+            <div className={classes["col-content"]} href="/">
+              <figure>
+                <a href="/">
+                  <img src={FirstServiceLogo} alt="" />
+                </a>
+              </figure>
+            </div>
+
+            <h3 className={classes["title"]}>Service Name</h3>
           </div>
 
-          <h3 className={classes["title"]}>Service Name</h3>
-        </div>
+          <div className={classes["col"]}>
+            <div className={classes["col-content"]} href="/">
+              <figure>
+                <a href="/">
+                  <img src={SecondServiceLogo} alt="" />
+                </a>
+              </figure>
+            </div>
 
-        <div className={classes["col"]}>
-          <div className={classes["col-content"]} href="/">
-            <figure>
-              <a href="/">
-                <img src={SecondServiceLogo} alt="" />
-              </a>
-            </figure>
-          </div>
-          
-          <h3>Service Name</h3>
-        </div>
-
-        <div className={classes["col"]}>
-          <div className={classes["col-content"]} href="/">
-            <figure>
-              <a href="/">
-                <img src={ThirdServiceLogo} alt="" />
-              </a>
-            </figure>
+            <h3>Service Name</h3>
           </div>
 
-          <h3>Service Name</h3>
+          <div className={classes["col"]}>
+            <div className={classes["col-content"]} href="/">
+              <figure>
+                <a href="/">
+                  <img src={ThirdServiceLogo} alt="" />
+                </a>
+              </figure>
+            </div>
+
+            <h3>Service Name</h3>
+          </div>
         </div>
       </div>
-    </div>
+    </Slide>
   );
 };
 
