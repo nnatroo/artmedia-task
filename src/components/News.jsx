@@ -57,69 +57,54 @@ const News = () => {
   ];
 
   const swiperBreakpoints = {
-    240: {
-      spaceBetween: 500,
+    0: {
+      spaceBetween: 200,
       slidesPerView: 1,
     },
-    320: {
-      spaceBetween: 400,
+    365: {
+      spaceBetween: 200,  
       slidesPerView: 1,
     },
-    0: {
-      spaceBetween: 300,
-      slidesPerView: 2,
+    420: {
+      spaceBetween: 200,
+      slidesPerView: 1,
     },
-    0: {
-      spaceBetween: 300,
-      slidesPerView: 2,
+    576: {
+      spaceBetween: 200,
+      slidesPerView: 1.5,
     },
-    0: {
-      spaceBetween: 400,
-      slidesPerView: 3,
-    },
-    0: {
-      spaceBetween: 400,
-      slidesPerView: 3,
-    },
-    0: {
-      spaceBetween: 400,
-      slidesPerView: 2,
-    },
-    0: {
-      spaceBetween: 400,
-      slidesPerView: 2,
-    },
-    0: {
-      spaceBetween: 300,
-      slidesPerView: 2,
+    768: {
+      spaceBetween: -160,
+      slidesPerView: 1,
     },
     1024: {
-      spaceBetween: 100,
-      slidesPerView: 2,
+      spaceBetween: 400,
+      slidesPerView: 2.5,
     },
     1280: {
-      spaceBetween: 100,
-      slidesPerView: 2,
+      spaceBetween: 400,
+      slidesPerView: 2.5,
     },
     1366: {
-      spaceBetween: 100,
-      slidesPerView: 2,
+      spaceBetween: 350,
     },
     1440: {
-      spaceBetween: 200,
-      slidesPerView: 2,
+      spaceBetween: 250,
     },
     1680: {
+      spaceBetween: 0,
+    },
+    1920: {
       spaceBetween: -100,
     },
   };
 
   return (
-    <Fade>
+    // <Fade>
       <div id="projects" className={classes["news-wrapper"]}>
         <div className={`${classes["container"]} ${layout["container"]}`}>
           <div className={classes["top-bar"]}>
-            <h1>News</h1>
+            <h2>News</h2>
             <div className={classes["arrows-wrapper"]}>
               <img
                 className={`swipper-prev-button ${classes["swiper-button-prev"]}`}
@@ -145,9 +130,9 @@ const News = () => {
                 console.log(swiper.activeIndex);
               }}
               // onSwiper={(swiper) => console.log(swiper)}
-              spaceBetween={-110}
-              slidesPerView={3}
+              // spaceBetween={50}
               breakpoints={swiperBreakpoints}
+              slidesPerView={3.5}
               navigation={{
                 prevEl: ".swipper-prev-button",
                 nextEl: ".swipper-next-button",
@@ -181,7 +166,7 @@ const News = () => {
           </div>
         </div>
       </div>
-    </Fade>
+    // </Fade>
   );
 };
 

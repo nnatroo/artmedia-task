@@ -16,37 +16,41 @@ const Services = () => {
       <h2>Services</h2>
 
       <div className={`${classes["services-items"]}`}>
-
         <div className={classes["col"]}>
-          <a href="/">
+          <div className={classes["col-content"]} href="/">
             <figure>
-              <img src={FirstServiceLogo} alt="" />
+              <a href="/">
+                <img src={FirstServiceLogo} alt="" />
+              </a>
             </figure>
-          </a>
+          </div>
 
           <h3 className={classes["title"]}>Service Name</h3>
         </div>
 
         <div className={classes["col"]}>
-          <a href="/">
+          <div className={classes["col-content"]} href="/">
             <figure>
-              <img src={SecondServiceLogo} alt="" />
+              <a href="/">
+                <img src={SecondServiceLogo} alt="" />
+              </a>
             </figure>
-          </a>
-
+          </div>
+          
           <h3>Service Name</h3>
         </div>
 
         <div className={classes["col"]}>
-          <a href="/">
+          <div className={classes["col-content"]} href="/">
             <figure>
-              <img src={ThirdServiceLogo} alt="" />
+              <a href="/">
+                <img src={ThirdServiceLogo} alt="" />
+              </a>
             </figure>
-          </a>
+          </div>
 
           <h3>Service Name</h3>
         </div>
-
       </div>
     </div>
   );
