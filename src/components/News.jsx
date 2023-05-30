@@ -116,13 +116,13 @@ const News = () => {
             onSlideChange={(swiper) => {
               setActiveSlide(swiper.activeIndex);
               slideChangeHandler(swiper);
-              if (swiper.activeIndex >= 5 ) {
+              if (swiper.activeIndex >= 5) {
                 swiper.slideTo(0);
-              } 
+              }
               console.log(swiper.activeIndex);
             }}
             spaceBetween={0}
-            slidesPerView={"auto"}
+            slidesPerView={'auto'}
             navigation={{
               prevEl: ".swipper-prev-button",
               nextEl: ".swipper-next-button",
@@ -144,10 +144,13 @@ const News = () => {
                   </div>
                   <div className={classes["swiper-card-content"]}>
                     <h3>{item.heading}</h3>
-                    <p>{item.date}</p>
-                    <button>
-                      See More <img src={Arrow} alt="" />
-                    </button>
+                    <time>{item.date}</time>
+                    <a href="/">
+                      <button>
+                        <span>See More </span>
+                        <img src={Arrow} alt="" />
+                      </button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
