@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 import BurgerMenu from './components/BurgerMenu'
 
 function App() {
-
   return (
     <>
      <Header />

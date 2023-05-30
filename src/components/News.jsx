@@ -130,16 +130,16 @@ const News = () => {
                 console.log(swiper.activeIndex);
               }}
               // onSwiper={(swiper) => console.log(swiper)}
-              // spaceBetween={50}
-              breakpoints={swiperBreakpoints}
-              slidesPerView={3.5}
+              spaceBetween={0}
+              // breakpoints={swiperBreakpoints}
+              slidesPerView={"auto"}
               navigation={{
                 prevEl: ".swipper-prev-button",
                 nextEl: ".swipper-next-button",
               }}
             >
               {swiperCardData.map((item, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide className={`${classes["swiper-slide"]}`} key={index}>
                   <div className={`${classes["swiper-card"]}`}>
                     <div
                       className={`${classes["image-container"]} ${
