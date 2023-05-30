@@ -18,14 +18,17 @@
     .image-wrapper {
       position: relative;
 
-      .about-image-border {
+      &::after {
+        content: "";
+        z-index: -100;
+        width: calc(100% - 22px);
+        height: 10px;
         position: absolute;
+        bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
-        width: 98%;
-        height: calc(100% + 8px);
-        border: 1px solid #2b3252;
-        z-index: -1;
+        border: 1px solid black;
+      }
 
         @media (max-width: 768px) {
           width: 310px;
@@ -34,7 +37,7 @@
         @media (max-width: 320px) {
           width: 210px;
         }
-      }
+      // }
 
       .about-image {
         @media (max-width: 768px) {
@@ -85,8 +88,6 @@
           background: rgba(255, 255, 255, 0.1);
           border: 1px solid #ef5555;
           border-radius: 8px;
-          font-weight: 700;
-          font-size: 0.875rem;
           color: #ef5555;
           cursor: pointer;
           width: fit-content;
@@ -95,6 +96,8 @@
           align-items: center;
           gap: 12px;
           transition: 380ms;
+          font-weight: 700;
+          font-size: 0.875rem;
 
           &:hover {
             background-color: #ef5555;
