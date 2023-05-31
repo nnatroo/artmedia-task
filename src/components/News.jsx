@@ -29,61 +29,61 @@ const News = () => {
       date: "22 April 2023",
       imageUrl: Image1,
     },
-//     {
-//       heading: "The point of using Lorem Ipsum",
-//       date: "20 April 2023",
-//       imageUrl: Image2,
-//     },
-//     {
-//       heading: "I must explain to you how all this mistaken idea",
-//       date: "19 April 2023",
-//       imageUrl: Image3,
-//     },
-//     {
-//       heading: "On the other hand, we denounce with righteous indignation",
-//       date: "15 April 2023",
-//       imageUrl: Image4,
-//     },
-//     {
-//       heading: "There are many variations of passages",
-//       date: "22 April 2023",
-//       imageUrl: Image1,
-//     },
-//     {
-//       heading: "The point of using Lorem Ipsum",
-//       date: "20 April 2023",
-//       imageUrl: Image2,
-//     },
-//     {
-//       heading: "I must explain to you how all this mistaken idea",
-//       date: "19 April 2023",
-//       imageUrl: Image3,
-//     },
-//     {
-//       heading: "",
-//       date: "",
-//       imageUrl: "",
-//     },
-//     {
-//       heading: "",
-//       date: "",
-//       imageUrl: "",
-//     },
-//     {
-//       heading: "",
-//       date: "",
-//       imageUrl: "",
-//     },
-//     {
-//       heading: "",
-//       date: "",
-//       imageUrl: "",
-//     },
-//     {
-//       heading: "",
-//       date: "",
-//       imageUrl: "",
-//     },
+    {
+      heading: "The point of using Lorem Ipsum",
+      date: "20 April 2023",
+      imageUrl: Image2,
+    },
+    {
+      heading: "I must explain to you how all this mistaken idea",
+      date: "19 April 2023",
+      imageUrl: Image3,
+    },
+    {
+      heading: "On the other hand, we denounce with righteous indignation",
+      date: "15 April 2023",
+      imageUrl: Image4,
+    },
+    {
+      heading: "There are many variations of passages",
+      date: "22 April 2023",
+      imageUrl: Image1,
+    },
+    {
+      heading: "The point of using Lorem Ipsum",
+      date: "20 April 2023",
+      imageUrl: Image2,
+    },
+    {
+      heading: "I must explain to you how all this mistaken idea",
+      date: "19 April 2023",
+      imageUrl: Image3,
+    },
+    {
+      heading: "",
+      date: "",
+      imageUrl: "",
+    },
+    {
+      heading: "",
+      date: "",
+      imageUrl: "",
+    },
+    {
+      heading: "",
+      date: "",
+      imageUrl: "",
+    },
+    {
+      heading: "",
+      date: "",
+      imageUrl: "",
+    },
+    {
+      heading: "",
+      date: "",
+      imageUrl: "",
+    },
   ];
 
   return (
