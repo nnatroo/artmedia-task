@@ -1,18 +1,30 @@
-.primary-button {
-  background-color: transparent;
-  border: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-  cursor: pointer;
+a.btn,
+button.btn {
+  display: inline-flex;
   width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  transition: 0.1s;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 10px 18px;
+  transition: 0.2s;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  color: #333333;
+
+  &:focus {
+    transform: scale(0.95);
+  }
+  
+  span {
+    padding-right: 12px;
+  }
 
   img {
-    transition: 0.2s;
+    transition: 200ms;
   }
 
   &:hover {
@@ -21,40 +33,54 @@
       transform: translateX(6px);
     }
   }
-}
 
-.secondary-button {
-  background-color: transparent;
-  border: 1px solid #EF5555;
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #EF5555;
-  cursor: pointer;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  transition: 300ms;
-
-  &:hover {
-    background-color: #EF5555;
+  // Primary button styles
+  &.primary-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
 
     span {
-      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: #ffffff;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.258);
+      box-shadow: 1px 1px 8px #ffffff9a;
     }
   }
 
-  img {
-    transition: 0.2s;
-  }
+  // Secondary button styles
+  &.secondary-button {
+    border: 1px solid #ef5555;
+    border-radius: 8px;
+    font-weight: 700;
 
-  &:hover {
-    img {
-      transition: 0.2s;
-      transform: translateX(6px);
-      filter: brightness(0%) invert(100%);
+    background: linear-gradient(to right, #ef5555 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 200ms ease-out;
+
+    span {
+      font-size: 14px;
+      line-height: 160%;
+      color: #ef5555;
     }
+
+    &:hover {
+      background-position: left bottom;
+
+      span {
+        color: #ffffff;
+      }
+
+      img {
+        filter: brightness(0%) invert(100%);
+      }
+    }
+
   }
 }

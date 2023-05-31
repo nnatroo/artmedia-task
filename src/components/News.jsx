@@ -14,6 +14,7 @@ import Image2 from "../assets/image2.png";
 import Image3 from "../assets/image3.png";
 import Image4 from "../assets/image4.png";
 import { useEffect, useState } from "react";
+import Button from "../UI/Button";
 
 const News = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -144,12 +145,7 @@ const News = () => {
                   <div className={classes["swiper-card-content"]}>
                     <h3>{item.heading}</h3>
                     <time>{item.date}</time>
-                    <a href="/">
-                      <button>
-                        <span>See More </span>
-                        <img src={Arrow} alt="" />
-                      </button>
-                    </a>
+                    <Button label={"See More"} primary />
                   </div>
                 </div>
               </SwiperSlide>

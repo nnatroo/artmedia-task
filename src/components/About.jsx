@@ -6,8 +6,10 @@ import Button from "../UI/Button";
 
 const About = () => {
   return (
-    <section id="about" className={`${classes["container"]} ${layout["container"]}`}>
-
+    <section
+      id="about"
+      className={`${classes["container"]} ${layout["container"]}`}
+    >
       <figure className={classes["image-wrapper"]}>
         <img className={classes["about-image"]} src={AboutImage} alt="" />
       </figure>
@@ -24,14 +26,11 @@ const About = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          
-          <a href="/">
-            <Button label={"See More"} secondary />
-          </a>
+
+          <Button label={"See More"} secondary />
           
         </div>
       </div>
-
     </section>
   );
 };

@@ -3,19 +3,20 @@ import classes from "../modules/Button.module.scss";
 import Arrow from "../assets/arrow.svg";
 import OrangeArrow from "../assets/orangeArrow.svg";
 
-const Button = ({ label, primary, secondary, onClick }) => {
-  const buttonClass = primary
-    ? "primary-button"
-    : secondary
-    ? "secondary-button"
-    : "";
+const Button = ({ label, primary, secondary, disabled, onClick }) => {
+  
+  const buttonClass = primary ? "primary-button" : secondary ? "secondary-button" : disabled ? "disabled" : "";
 
   return (
-    <button className={classes[buttonClass]} onClick={onClick}>
+
+    <a href="/" className={`${classes["btn"]} ${classes[buttonClass]}`} onClick={onClick}>
       <span>{label}</span>
       <img src={primary ? Arrow :  OrangeArrow} alt="" />
-    </button>
+    </a>
+
   );
 };
+
+// 
 
 export default Button;
