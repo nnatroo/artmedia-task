@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../modules/About.module.scss";
 import layout from "../modules/Layout.module.scss";
-import AboutImage from "../assets/aboutImage.png";
+import AboutImage from "../assets/about-image.jpg";
 import Button from "../UI/Button";
 
 const About = () => {

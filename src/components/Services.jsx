@@ -1,20 +1,14 @@
 import React from "react";
 import classes from "../modules/Services.module.scss";
 import layout from "../modules/Layout.module.scss";
-import FirstServiceLogo from "../assets/first-service-logo.png";
-import SecondServiceLogo from "../assets/second-service-logo.png";
-import ThirdServiceLogo from "../assets/third-service-logo.png";
-import { Slide } from "react-awesome-reveal";
-import Tilt from "react-parallax-tilt";
+import FirstServiceLogo from "../assets/service-logo-1.png";
+import SecondServiceLogo from "../assets/service-logo-2.png";
+import ThirdServiceLogo from "../assets/service-logo-3.png";
 
 const Services = () => {
   return (
-      <section
-        id="services"
-        className={`${classes["services-wrapper"]} ${layout["container"]}`}
-      >
+      <section id="services" className={`${classes["services-wrapper"]} ${layout["container"]}`}>
         <h2>Services</h2>
-
         <div className={`${classes["services-items"]}`}>
           <div className={classes["col"]}>
             <div className={classes["col-content"]} href="/">

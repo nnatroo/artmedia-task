@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../modules/Button.module.scss";
 import Arrow from "../assets/arrow.svg";
-import OrangeArrow from "../assets/orangeArrow.svg";
+import OrangeArrow from "../assets/orange-arrow.svg";
 
 const Button = ({ label, primary, secondary, disabled, onClick }) => {
   

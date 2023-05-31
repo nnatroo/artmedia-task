@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import classes from "../modules/BurgerMenu.module.scss";
-import SearchIcon from "../assets/searchIcon.svg";
-import "animate.css";
+import SearchIcon from "../assets/search-icon.svg";
 import Hamburger from "hamburger-react";
 import NavbarLinks from "../UI/NavbarLinks";
 

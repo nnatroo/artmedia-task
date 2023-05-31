@@ -1,19 +1,17 @@
+import { useState } from "react";
 import classes from "../modules/News.module.scss";
-import layout from "../modules/Layout.module.scss";
-import RightArrow from "../assets/rightArrow.svg";
-import { Fade } from "react-awesome-reveal";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Arrow from "../assets/arrow.svg";
-import Image1 from "../assets/image1.png";
-import Image2 from "../assets/image2.png";
-import Image3 from "../assets/image3.png";
-import Image4 from "../assets/image4.png";
-import { useEffect, useState } from "react";
+import layout from "../modules/Layout.module.scss";
+import RightArrow from "../assets/right-arrow.svg";
+import Image1 from "../assets/image-1.jpg";
+import Image2 from "../assets/image-2.jpg";
+import Image3 from "../assets/image-3.jpg";
+import Image4 from "../assets/image-4.jpg";
 import Button from "../UI/Button";
 
 const News = () => {
@@ -109,6 +107,7 @@ const News = () => {
         </div>
 
         <div className={classes["swiper"]}>
+          
           <Swiper
             className={classes["swiper-wrapper"]}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -119,15 +118,15 @@ const News = () => {
               if (swiper.activeIndex >= 5) {
                 swiper.slideTo(0);
               }
-              console.log(swiper.activeIndex);
+              // console.log(swiper.activeIndex);
             }}
             spaceBetween={0}
             slidesPerView={"auto"}
             navigation={{
               prevEl: ".swipper-prev-button",
               nextEl: ".swipper-next-button",
-            }}
-          >
+            }}>
+
             {swiperCardData.map((item, index) => (
               <SwiperSlide className={`${classes["swiper-slide"]}`} key={index}>
                 <div className={`${classes["swiper-card"]}`}>

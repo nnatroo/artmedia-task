@@ -2,7 +2,7 @@ import React from "react";
 import classes from "../modules/Header.module.scss";
 import layout from "../modules/Layout.module.scss";
 import CompanyLogo from "../assets/company-logo.svg";
-import SearchIcon from "../assets/searchIcon.svg";
+import SearchIcon from "../assets/search-icon.svg";
 import NavbarLinks from "../UI/NavbarLinks";
 
 const Header = () => {
