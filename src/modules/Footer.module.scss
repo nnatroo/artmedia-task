@@ -170,7 +170,16 @@
 
               &:focus {
                 outline: none;
-                border: 1px solid #f84343;
+                border: 1px solid #ef5555;
+              }
+
+              &::-webkit-scrollbar {
+                width: 4px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                border-radius: 20px;
+                background-color: #ffffff;
               }
             }
 
