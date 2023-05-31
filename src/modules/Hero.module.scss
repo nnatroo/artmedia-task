@@ -1,9 +1,12 @@
 .hero-image-container {
-  margin-top: 56px;
+  padding-top: 56px;
   display: flex;
   justify-content: center;
   height: fit-content;
   margin-bottom: 140px;
+  @media (max-width: 1280px) {
+    margin-bottom: 120px;
+  }
   @media (max-width: 1024px) {
     padding-top: 28px;
   }
