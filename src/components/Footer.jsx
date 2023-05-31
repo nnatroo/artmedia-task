@@ -8,8 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Footer = () => {
   return (
-    // <Fade  >
-      <section className={classes["footer"]}>
+      <footer id="footer" className={classes["footer"]}>
         <div className={`${classes["container"]} ${layout["container"]}`}>
           <div className={classes["footer-content"]}>
             <div className={classes["footer-brand-wrapper"]}>
@@ -65,8 +64,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
-    // </Fade>
+      </footer>
   );
 };
 

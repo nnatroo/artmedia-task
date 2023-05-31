@@ -4,11 +4,11 @@ import layout from "../modules/Layout.module.scss";
 import Arrow from "../assets/arrow.svg";
 import { Fade } from "react-awesome-reveal";
 import HeroImage from "../assets/hero-image.jpg";
+import Button from "../UI/Button";
 
 const Hero = () => {
   return (
-    // <Fade>
-      <div className={`${classes["hero-image-container"]} ${layout["wide"]}`}>
+      <section id="home" className={`${classes["hero-image-container"]} ${layout["wide"]}`}>
 
         <figure>
           <img
@@ -31,13 +31,12 @@ const Hero = () => {
             </div>
             <div className={classes["btn"]}>
               <a>
-                <span>See More</span>
-                <img src={Arrow} alt="" />
+                <Button label={"See More"} primary/>
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     //  </Fade>
   );
 };

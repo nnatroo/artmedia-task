@@ -23,6 +23,7 @@ img {
 
 body {
   overflow-x: hidden;
+  height: 6000px;
 }
 
 ::selection {
@@ -43,7 +44,3 @@ img {
   user-select: none;
 }
 
-// Temporary
-::-webkit-scrollbar {
-  display: none;
-}

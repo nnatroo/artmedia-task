@@ -88,8 +88,7 @@ const News = () => {
   ];
 
   return (
-    // <Fade>
-    <div id="projects" className={classes["news-wrapper"]}>
+    <section id="projects" className={classes["news-wrapper"]}>
       <div className={`${classes["container"]} ${layout["container"]}`}>
         <div className={classes["top-bar"]}>
           <h2>News</h2>
@@ -122,7 +121,7 @@ const News = () => {
               console.log(swiper.activeIndex);
             }}
             spaceBetween={0}
-            slidesPerView={'auto'}
+            slidesPerView={"auto"}
             navigation={{
               prevEl: ".swipper-prev-button",
               nextEl: ".swipper-next-button",
@@ -158,8 +157,7 @@ const News = () => {
           </Swiper>
         </div>
       </div>
-    </div>
-    // </Fade>
+    </section>
   );
 };
 

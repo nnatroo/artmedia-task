@@ -8,7 +8,7 @@ import NavbarLinks from "../UI/NavbarLinks";
 const Header = () => {
   return (
     <>
-      <header id="home" className={classes["header"]}>
+      <header id="header" className={classes["header"]}>
         <div className={`${classes["container"]} ${layout["container"]}`}>
           <div className={classes["navbar-logo"]}>
             <a href="/">
@@ -23,9 +23,11 @@ const Header = () => {
             <form action="/">
               <div className={classes["form-item"]}>
                 <input type="search" placeholder="Search keyword ..." />
+
                 <button>
                   <img src={SearchIcon} alt="" />
                 </button>
+
               </div>
             </form>
           </div>
