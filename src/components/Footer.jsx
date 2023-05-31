@@ -44,11 +44,12 @@ const Footer = () => {
             </div>
           </div>
 
-          <div id="contact" className={classes["footer-contact"]}>
+          <form id="contact" className={classes["footer-contact"]}>
             <div className={classes["contact-top-row"]}>
               <input type="text" placeholder="Name" name="" id="" />
               <input type="email" placeholder="Email" name="" id="" />
             </div>
+
             <div className={classes["contact-bottom-row"]}>
               <textarea
                 placeholder="Text"
@@ -56,13 +57,12 @@ const Footer = () => {
                 name=""
                 rows="7"
                 cols="50"
-              ></textarea>
-
+              />
               <a href="/">
-                <button>Send</button>
+                <span>Send</span>
               </a>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
