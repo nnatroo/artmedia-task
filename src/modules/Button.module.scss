@@ -1,90 +1,92 @@
-a.btn,
-button.btn {
-  display: inline-flex;
-  width: fit-content;
-  box-sizing: border-box;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  transition: 0.2s;
-  padding: 10px 18px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 4px;
-  background-color: #e0e0e0;
-  color: #333333;
+a,
+button,
+input {
+  &.btn {
+    display: inline-flex;
+    width: fit-content;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    transition: 0.2s;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    color: #333333;
 
-  @media (max-width: 420px) {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
+    @media (max-width: 420px) {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
 
-  &:focus {
-    transform: scale(0.95);
-  }
-  
-  span {
-    padding-right: 12px;
-  }
+    &:focus {
+      transform: scale(0.95);
+    }
 
-  img {
-    transition: 200ms;
-  }
+    span {
+      padding-right: 12px;
+    }
 
-  &:hover {
     img {
-      transition: 0.2s;
-      transform: translateX(6px);
+      transition: 200ms;
+    }
+
+    &:hover {
+      img {
+        transition: 0.2s;
+        transform: translateX(6px);
+      }
+    }
+
+    &.primary-button {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 8px;
+
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        color: #ffffff;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.258);
+        box-shadow: 1px 1px 8px #ffffff9a;
+      }
+    }
+
+    // Secondary button styles
+    &.secondary-button {
+      border: 1px solid #ef5555;
+      border-radius: 8px;
+      font-weight: 700;
+      background: linear-gradient(to right, #ef5555 50%, white 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 200ms ease-out;
+
+      span {
+        font-size: 14px;
+        line-height: 160%;
+        color: #ef5555;
+      }
+
+      &:hover {
+        background-position: left bottom;
+
+        span {
+          color: #ffffff;
+        }
+
+        img {
+          filter: brightness(0%) invert(100%);
+        }
+      }
     }
   }
 
   // Primary button styles
-  &.primary-button {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
-
-    span {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 160%;
-      color: #ffffff;
-    }
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.258);
-      box-shadow: 1px 1px 8px #ffffff9a;
-    }
-  }
-
-  // Secondary button styles
-  &.secondary-button {
-    border: 1px solid #ef5555;
-    border-radius: 8px;
-    font-weight: 700;
-
-    background: linear-gradient(to right, #ef5555 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 200ms ease-out;
-
-    span {
-      font-size: 14px;
-      line-height: 160%;
-      color: #ef5555;
-    }
-
-    &:hover {
-      background-position: left bottom;
-
-      span {
-        color: #ffffff;
-      }
-
-      img {
-        filter: brightness(0%) invert(100%);
-      }
-    }
-
-  }
 }

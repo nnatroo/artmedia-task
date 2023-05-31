@@ -13,14 +13,14 @@ const Footer = () => {
           <div className={classes["footer-logo-wrapper"]}>
             <div className={classes["footer-logo"]}>
               <img src={FooterLogo} alt="" />
-              <h2>Company Name</h2>
+              <h3>Company Name</h3>
             </div>
-            <div>
-              <p>© {new Date().getFullYear()} All Rights Reserved</p>
+            <div className={classes["date"]}>
+              © {new Date().getFullYear()} All Rights Reserved
             </div>
           </div>
 
-          <div className={classes["footer-links-wrapper"]}>
+          <nav className={classes["footer-links-wrapper"]}>
             <ul className={classes["footer-links"]}>
               <li>
                 <a href="#services">Services</a>
@@ -39,28 +39,48 @@ const Footer = () => {
               </li>
             </ul>
             <div className={classes["footer-links-socials"]}>
-              <img src={InstagramLogo} alt="" />
-              <img src={FacebookLogo} alt="" />
+              <ul>
+                <li>
+                  <a href="/">
+                    <img src={InstagramLogo} alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <img src={FacebookLogo} alt="" />
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
+          </nav>
 
           <form id="contact" className={classes["footer-contact"]}>
-            <div className={classes["contact-top-row"]}>
-              <input type="text" placeholder="Name" name="" id="" />
-              <input type="email" placeholder="Email" name="" id="" />
-            </div>
-
-            <div className={classes["contact-bottom-row"]}>
-              <textarea
-                placeholder="Text"
-                id="text-area"
+            <div className={classes["footer-contact-wrapper"]}>
+              <input
+                type="text"
+                placeholder="Name"
                 name=""
-                rows="7"
-                cols="50"
+                className={classes["name"]}
               />
-              <a href="/">
-                <span>Send</span>
-              </a>
+              <input
+                type="email"
+                placeholder="Email"
+                name=""
+                className={classes["email"]}
+              />
+
+              <div className={classes["textarea-wrapper"]}>
+                <textarea
+                  placeholder="Text"
+                  id="text-area"
+                  name=""
+                  rows="7"
+                  cols="50"
+                />
+                <a href="/">
+                  Send
+                </a>
+              </div>
             </div>
           </form>
         </div>
